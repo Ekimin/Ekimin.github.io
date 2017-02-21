@@ -1,7 +1,10 @@
 ---
 title: JDK安装
 date: 2016-01-14 03:06:35
-tags: [jdk, java]
+tags: 
+    - Java
+    - Jdk
+categories: Java
 ---
 
 环境

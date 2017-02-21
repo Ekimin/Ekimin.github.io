@@ -1,7 +1,11 @@
 ---
 title: 在github上搭建hexo博客
 date: 2016-10-13 17:47:25
-tags: hexo
+tags: Hexo
+categories: 博客
+updated:
+comments:
+permalink:
 ---
 
 **本文介绍并记录了hexo博客的搭建过程**
@@ -95,7 +99,6 @@ hexo deploy
 hexo d
 ```
 
-登录 ekimin.github.io 访问页面
+登录 ${yourname}.github.io 访问页面
 
 ----
-

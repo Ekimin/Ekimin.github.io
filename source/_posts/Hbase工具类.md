@@ -1,6 +1,6 @@
 title: Hbase工具类
 date: 2016-07-29 17:27:45
-tags: [大数据, hbase]
+tags: [大数据, Hbase]
 categories: 大数据
 layout: post
 updated: 2016-07-29 17:28:33

@@ -1,6 +1,6 @@
 title: Aria2安装配置
 date: 2016-12-07 23:31:31
-tags: aria2
+tags: Aria2
 categories: 常用工具
 layout:
 updated:

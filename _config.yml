@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 稳 妥 妥
+title: 稳妥妥弃疗
 subtitle: Ekimin的博客
 description: 挣扎于IT中的一只doge
 author: Ekimin
@@ -82,7 +82,7 @@ exclude_generator:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repository: https://github.com/Ekimin/Ekimin.github.io.git
+  repository: git@github.com:Ekimin/Ekimin.github.io.git
   branch: master
 
 jsonContent:
@@ -106,3 +106,15 @@ jsonContent:
 
 # 站点统计
 baidu_analytics: 5d49c13ad5a2101a7de8bff11a77c109
+
+# Algolia 搜索
+algolia:
+  appId: '0XHJNLJKH5'
+  apiKey: 'df8136b265109307bfbbe5576287d635'
+  adminApiKey: 'a8aa45462154736510bedf5ddadc838e'
+  indexName: 'Hexo'
+  chunkSize: 5000
+  fields:
+    - title
+    - slug
+    - content:strip

@@ -1,6 +1,6 @@
 title: Hive和Hbase的关系
 date: 2016-09-25 17:44:18
-tags: 大数据
+tags: [大数据, Hive, Hbase]
 categories: 大数据 
 layout: post
 updated: 
