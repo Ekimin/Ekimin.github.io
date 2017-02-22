@@ -110,7 +110,7 @@ google_analytics: UA-92391941-1
 
 # Algolia 搜索
 algolia:
-  appId: '0XHJNLJKH5'
+  applicationID: '0XHJNLJKH5'
   apiKey: 'df8136b265109307bfbbe5576287d635'
   adminApiKey: 'a8aa45462154736510bedf5ddadc838e'
   indexName: 'Hexo'
