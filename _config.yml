@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 稳妥妥弃疗
+title: (¬､¬)稳妥妥(￢_￢)
 subtitle: Ekimin的博客
 description: 挣扎于IT中的一只doge
 author: Ekimin
@@ -106,6 +106,7 @@ jsonContent:
 
 # 站点统计
 baidu_analytics: 5d49c13ad5a2101a7de8bff11a77c109
+google_analytics: UA-92391941-1
 
 # Algolia 搜索
 algolia:
