@@ -1,7 +1,9 @@
 ---
 title: 在github上搭建hexo博客
 date: 2016-10-13 17:47:25
-tags: Hexo
+tags: 
+    - Hexo
+    - 博客
 categories: 博客
 updated:
 comments:
@@ -13,6 +15,7 @@ permalink:
 <!--more-->
 
 # 版本说明
+博客撰写时版本：
 hexo: 3.2.2
 node: 6.9.4
 

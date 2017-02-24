@@ -400,8 +400,8 @@ algolia_search:
     per_page: 10
   labels:
     input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
+    hits_empty: "没有找到你想要的东西: ${query}"
+    hits_stats: "${hits} 查询耗时 ${time} ms"
 
 
 
