@@ -53,3 +53,6 @@ File-settings-subversion, 勾选Use command line client，选择刚刚安装的S
 ## 如果上面不管用，可以尝试下面方法修改配置文件
 打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8
 然后重启IDEA，一般问题都可以解决
+
+# IDEA 激活
+[激活服务器](http://idea.lanyus.com/)
