@@ -44,6 +44,9 @@ mvn <phase1> <phase2> ...
 - 编译成的class文件: ./target/classes/
 - 项目整个打包的jar文件： ./target/
 
+- GroupId 是项目组织唯一的标识符，实际对应JAVA的包的结构，是main目录里java的目录结构,比如 com.wentuotuo
+- ArtifactId 是项目的唯一的标识符，实际对应项目的名称，就是项目根目录的名称
+
 ## Maven 生命周期
 ### clean生命周期
 - pre-clean 在构建之前进行预清理

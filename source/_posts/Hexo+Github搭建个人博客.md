@@ -93,7 +93,7 @@ yum install nodejs
 adduser git 
 ```
 
-### 添加 sudo 权限
+### 给 git 用户添加 sudo 权限
 
 ```bash
 chmod 740 /etc/sudoers
@@ -105,7 +105,6 @@ vim /etc/sudoers
 root    ALL=(ALL)     ALL
 ```
 
-![](http://oduq3lfcc.bkt.clouddn.com/git%E9%85%8D%E7%BD%AEsudoer%E6%9D%83%E9%99%90.png)
 
 然后在下面新增一行:
 
@@ -113,7 +112,13 @@ root    ALL=(ALL)     ALL
 git ALL=(ALL) ALL
 ```
 
+添加后效果如图：
+
+![](http://oduq3lfcc.bkt.clouddn.com/git%E9%85%8D%E7%BD%AEsudoer%E6%9D%83%E9%99%90.png)
+
+
 保存编辑后退出。
+
 **PS：如果不熟悉VI或者VIM的使用，参考[Linux vi/vim编辑器常用命令与用法总结](http://www.cnblogs.com/jiayongji/p/5771444.html)**
 
 别忘了把文件权限改回去（还是为了安全）：
@@ -122,7 +127,7 @@ git ALL=(ALL) ALL
 chmod 400 /etc/sudoers
 ```
 
-### 设置密码
+### 给 git 用户设置密码
 
 ```bash
 sudo passwd git #该命令执行后输入两次要设置的密码
@@ -187,7 +192,7 @@ Port 22
 [root@iZj6c2vq0s1w6wkap2geanZ conf.d]# rm -rf /etc/nginx/conf.d/*
 ```
 
-- 将以下内容添加到/etc/nginx/conf.d/hexo.conf中
+- 新建 /etc/nginx/conf.d/git.conf 文件，将以下内容添加到其中
 
 ```bash
 server {
@@ -208,8 +213,11 @@ server {
 include /etc/nginx/sites-available/*.conf;
 include /var/www/*.conf;
 ```
+添加后配置文件如图：（红色方框内是新增内容）
+![](http://oduq3lfcc.bkt.clouddn.com/nginx-conf.png)
 
-**测试配置**
+
+**测试配置是否正确**
 
 ```bash
 [root@iZj6c2vq0s1w6wkap2geanZ blog.git]# nginx -t
@@ -288,16 +296,14 @@ Initialized empty Git repository in /var/www/blog/blog.git/
 
 ```bash
 #!/bin/bash
-GIT_REPO=/var/www/blog/blog.git
-TMP_GIT_CLONE=/tmp/HexoBlog
-PUBLIC_WWW=/var/www/hexo
+GIT_REPO=/var/www/blog/blog.git #换成你部署静态网页的git仓库
+TMP_GIT_CLONE=/tmp/HexoBlog #临时文件目录
+PUBLIC_WWW=/var/www/hexo #网站发布目录，即实际的网站目录，里面包含index.html等网站内容
 rm -rf ${TMP_GIT_CLONE}
 git clone $GIT_REPO $TMP_GIT_CLONE
 rm -rf ${PUBLIC_WWW}/*
 cp -rf ${TMP_GIT_CLONE}/* ${PUBLIC_WWW}
 ```
-
-**/var/www/html/hexo 换成你部署静态网页的地址**
 
 - 给post-receive 文件添加执行权限
 
@@ -312,6 +318,13 @@ cp -rf ${TMP_GIT_CLONE}/* ${PUBLIC_WWW}
 ```bash
 [git@iZj6c2vq0s1w6wkap2geanZ hooks]$ cd /var/www/blog/
 [git@iZj6c2vq0s1w6wkap2geanZ blog]$ sudo chown -R git:git blog.git
+```
+
+### 改变 hexo 目录拥有者为 git 用户
+
+```bash
+[git@iZj6c2vq0s1w6wkap2geanZ ~]$ cd /var/www/
+[git@iZj6c2vq0s1w6wkap2geanZ www]$ sudo chown -R git:git hexo
 ```
 
 ### 禁止 git 用户登录 shell
@@ -337,7 +350,7 @@ git:x:500:500::/home/git:/usr/bin/git-shell
 ```yaml
 deploy:
   type: git
-  repository: git@47.90.56.252:/var/www/blog/blog.git
+  repository: git@wentuotuo.com:/var/www/blog/blog.git
   branch: master
 ```
 
@@ -363,6 +376,9 @@ repository换成你的VPS上博客仓库路径
 npm install hexo --save #安装hexo环境到本目录
 npm install #安装npm 环境到本目录,该步骤不做的话可能会出现hexo generate过后缺少文件（如index页面）
 npm install hexo-deployer-git #hexo通过git发布网页的插件
+
+npm install hexo-algolia --save #使用algolia搜索的还需要安装此插件
+#...其他插件安装
 ```
 
 - 环境恢复成功，可以使用hexo g -d 发布博客了 
