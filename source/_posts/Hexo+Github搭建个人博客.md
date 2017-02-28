@@ -1,5 +1,5 @@
 title: Hexo+Github搭建个人博客
-date: 
+date: 2017-02-05 11:55:13
 tags: [Hexo, Github, 博客]
 categories: 博客
 layout: post
@@ -160,6 +160,16 @@ total 4
 ```
 
 将你本机的公钥添加到上面authorized_keys就可以了，多个key换行。
+
+### 设置 VPS 的 ssh 端口
+
+```bash
+[root@iZj6c2vq0s1w6wkap2geanZ hexo]# vim /etc/ssh/sshd_config
+```
+
+```bash
+Port 22
+```
 
 ## 安装配置 Nginx
 

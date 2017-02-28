@@ -87,7 +87,7 @@ exclude_generator:
 
 deploy:
   type: git
-  repository: ssh://47.90.56.252:22/var/www/blog/blog.git
+  repository: git@47.90.56.252:/var/www/blog/blog.git
   branch: master
 
 jsonContent:
