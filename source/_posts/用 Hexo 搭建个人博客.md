@@ -1,4 +1,4 @@
-title: Hexo+Github搭建个人博客
+title: 用 Hexo 搭建个人博客
 date: 2017-02-05 11:55:13
 tags: [Hexo, Github, 博客]
 categories: 博客
