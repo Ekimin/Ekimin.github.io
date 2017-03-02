@@ -1,9 +1,9 @@
 ---
 title: JDBC使用游标分页读取大量数据
 tags:
-  - java
+  - Java
   - 数据库
-categories: java
+categories: Java
 date: 2015-12-25 00:00:00
 updated:
 comments:

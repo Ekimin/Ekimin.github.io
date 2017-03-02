@@ -111,7 +111,7 @@ jsonContent:
 
 # 站点统计
 baidu_analytics: 5d49c13ad5a2101a7de8bff11a77c109
-google_analytics: UA-92391941-1
+#google_analytics: UA-92391941-1
 
 # Algolia 搜索
 algolia:

@@ -140,9 +140,6 @@ export JAVA_HOME JRE_HOME CLASS_PATH PATH
 
 同样，如果安装新的版本jdk，就会重新链接到最新安装的jdk版本。当然，也可以使用alternatives修改所要使用的版本。
 
-具体方法可参照：《使用Linux的alternatives管理多版本的软件》
-
-
 
 # 方法三：用rpm安装JDK
 
