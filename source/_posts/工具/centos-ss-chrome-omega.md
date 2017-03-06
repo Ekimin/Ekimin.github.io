@@ -12,9 +12,9 @@ comments:
 permalink:
 ---
 
-
-目录
-
+环境：
+服务器：阿里云香港云服务器一台
+系统：CentOs 7
 
 <!--more-->
 
