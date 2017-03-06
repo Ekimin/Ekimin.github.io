@@ -52,39 +52,28 @@ solr option [参数]
 
 ## 新建 Core
 
-1. 在自定义路径下，创建一个solrhome（名字可自定义）用来存放solr的core（可以为多个），即索引库数据，一个core相当于一个索引库。
+1. 在solr-6.4.1/server/solr下，创建一个文件夹（名字自定义），这个文件夹就是一个core
 ```bash
-[ymhe@iZj6c2vq0s1w6wkap2geanZ software]$ mkdir solrhome
-[ymhe@iZj6c2vq0s1w6wkap2geanZ software]$ ll
-total 143752
-drwxrwxr-x 9 ymhe ymhe      4096 Mar  3 14:16 solr-6.4.1
-drwxrwxr-x 2 ymhe ymhe      4096 Mar  3 14:36 solrhome
+[ymhe@iZj6c2vq0s1w6wkap2geanZ solr]$ pwd
+/home/ymhe/software/solr-6.4.1/server/solr
+[ymhe@iZj6c2vq0s1w6wkap2geanZ solr]$ mkdir wtt_core
 ```
 
-2. 在${SOLR_HOME}下创建一个集合文件夹比如 wtt_core，里面包括conf和data两个文件夹。(一个集合文件夹就是一个core)
+2.  solr-6.4.1/server/solr/configsets/basic_configs下的conf文件夹复制进来
 ```bash
-[ymhe@iZj6c2vq0s1w6wkap2geanZ wtt_core]$ pwd
-/home/ymhe/software/solrhome/wtt_core
-[ymhe@iZj6c2vq0s1w6wkap2geanZ wtt_core]$ ll
-total 8
-drwxrwxr-x 2 ymhe ymhe 4096 Mar  3 14:56 conf
-drwxrwxr-x 2 ymhe ymhe 4096 Mar  3 14:56 data
-[ymhe@iZj6c2vq0s1w6wkap2geanZ wtt_core]$ 
+[ymhe@iZj6c2vq0s1w6wkap2geanZ basic_configs]$ pwd
+/home/ymhe/software/solr-6.4.1/server/solr/configsets/basic_configs
+[ymhe@iZj6c2vq0s1w6wkap2geanZ basic_configs]$ cp -r conf/ /home/ymhe/software/solr-6.4.1/server/solr/wtt_core/
 ```
 
-3. 复制solrconfig.xml和schema.xml到wtt_core的conf目录下。
-```bash
-[ymhe@iZj6c2vq0s1w6wkap2geanZ conf]$ pwd
-/home/ymhe/software/solr-6.4.1/server/solr/configsets/basic_configs/conf
-[ymhe@iZj6c2vq0s1w6wkap2geanZ conf]$ cp solrconfig.xml /home/ymhe/software/solrhome/wtt_core/conf/
+3. 在sol界面上新建core，填入name和instancDir（第一步中建立的文件夹的名字，即核心的名字）
 
+![](http://oduq3lfcc.bkt.clouddn.com/image/solr/add%20core.png)
 
-```
+4. 点击 Add Core, 添加完成后如图所示。
 
+![](http://oduq3lfcc.bkt.clouddn.com/image/solr/addedcore.png)
 
-4. 在sol界面上新建core选择对应conf目录和data目录。
-
-5. 重启tomcat，完成 core 创建。
 
 ## solrconfig.xml 配置
 ```xml
@@ -131,3 +120,53 @@ drwxrwxr-x 2 ymhe ymhe 4096 Mar  3 14:56 data
   <searchComponent> 注册searchComponent
   <queryResponseWriter> 返回数据
 ```
+
+# 数据导入
+
+从数据库导入数据至solr。在wtt_core/conf/下新建hexo-data-config.xml(名字可自定义)
+
+
+```xml
+<dataConfig>
+    <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://wentuotuo.com:3306/test?useUnicode=true&amp;characterEncoding=UTF-8" user="hexo" password="iju_,sfe"/>
+        <document name="documents">
+        <entity name="documents" pk="id" query="SELECT * FROM Hexo" deltaQuery="select * from Hexo where date > '${dataimporter.last_index_time}'">
+
+         <field column="ID" name="id" />
+         <field column="title" name="title" />
+         <field column="date" name="date" />
+         <field column="slug" name="slug" />
+         <field column="content" name="content" />
+
+        </entity>
+    </document>
+</dataConfig>
+```
+
+在 solrconfig.xml 中，添加/修改 下面内容：
+
+```xml
+<requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
+     <lst name="defaults">
+         <str name="config">hexo-data-config.xml</str>
+     </lst>
+</requestHandler>
+```
+
+在界面上wtt_core核心中点击Dataimport，execute导入后：
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/solr/dataimport.png)
+
+# Error
+## SolrCore Initialization Failures
+- org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Error loading class 'org.apache.solr.handler.dataimport.DataImportHandler'
+
+- 原因: 缺少包solr-dataimporthandler-X.X.X.jar这个jar包，默认在下载包的dist目录下
+- 解决方法：在solrconfig.xml中增加下面一行
+```xml
+<lib dir="/home/ymhe/software/solr-6.4.1/dist" regex="solr-dataimporthandler-\d.*\.jar" />
+```
+
+# 参考资料
+
+- [Solr Data Import 快速入门](http://blog.chenlb.com/2010/03/solr-data-import-quick-start.html)
