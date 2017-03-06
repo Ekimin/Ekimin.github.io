@@ -1,5 +1,5 @@
 ---
-title: CentOs安装配置SS+Chrome SwitchyOmega配置
+title: CentOs安装配置SS+Chrome+SwitchyOmega配置
 tags:
   - Linux
   - ShadowSocks
