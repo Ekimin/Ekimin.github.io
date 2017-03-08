@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
+    <lastmod>2017-03-08T07:53:16.244Z</lastmod>
+    <data>
+        <display>
+        <title>Aria2安装配置</title>
+        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
+        
+        <tag>Aria2</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/02/05/%E5%8D%9A%E5%AE%A2/use-hexo-siteup-personal-blog/</loc>
+    <lastmod>2017-03-08T07:52:47.569Z</lastmod>
+    <data>
+        <display>
+        <title>用 Hexo 搭建个人博客</title>
+        <pubTime>2017-02-05T03:55:13.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>博客</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/03/01/%E5%B7%A5%E5%85%B7/git-tutorial/</loc>
+    <lastmod>2017-03-08T07:05:24.792Z</lastmod>
+    <data>
+        <display>
+        <title>Git 教程</title>
+        <pubTime>2017-03-01T12:13:39.000Z</pubTime>
+        
+        <tag>Github</tag>
+         
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/12/08/%E5%B7%A5%E5%85%B7/centos-ss-chrome-omega/</loc>
+    <lastmod>2017-03-08T07:05:24.791Z</lastmod>
+    <data>
+        <display>
+        <title>CentOs安装配置SS+Chrome+SwitchyOmega配置</title>
+        <pubTime>2016-12-08T02:39:29.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>ShadowSocks</tag>
+         
+        <tag>SwithyOmega</tag>
+         
+        <tag>翻墙</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
+    <lastmod>2017-03-08T07:05:24.791Z</lastmod>
+    <data>
+        <display>
+        <title>Maven学习笔记</title>
+        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
+        
+        <tag>Maven</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/</loc>
+    <lastmod>2017-03-08T07:05:24.790Z</lastmod>
+    <data>
+        <display>
+        <title>IntelliJ IDEA 笔记</title>
+        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
+        
+        <tag>IDEA</tag>
+         
+        <tag>乱码</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/09/25/%E5%A4%A7%E6%95%B0%E6%8D%AE/relation-between-hive-and-hbase/</loc>
+    <lastmod>2017-03-08T07:05:24.789Z</lastmod>
+    <data>
+        <display>
+        <title>Hive和Hbase的关系</title>
+        <pubTime>2016-09-25T09:44:18.000Z</pubTime>
+        
+        <tag>大数据</tag>
+         
+        <tag>Hbase</tag>
+         
+        <tag>Hive</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/12/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/demo-of-hbase-in-java-new-API-1.X/</loc>
+    <lastmod>2017-03-08T07:05:24.788Z</lastmod>
+    <data>
+        <display>
+        <title>Hbase新API Demo</title>
+        <pubTime>2016-12-22T14:34:08.000Z</pubTime>
+        
+        <tag>大数据</tag>
+         
+        <tag>Hbase</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/07/06/%E5%A4%A7%E6%95%B0%E6%8D%AE/manual-of-sqoop/</loc>
+    <lastmod>2017-03-08T07:05:24.788Z</lastmod>
+    <data>
+        <display>
+        <title>Sqoop抽数</title>
+        <pubTime>2016-07-06T08:45:22.000Z</pubTime>
+        
+        <tag>大数据</tag>
+         
+        <tag>Sqoop</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2015/12/25/Java/use-cursor-read-bigdata/</loc>
+    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
+    <data>
+        <display>
+        <title>JDBC使用游标分页读取大量数据</title>
+        <pubTime>2015-12-24T16:00:00.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/10/13/%E5%8D%9A%E5%AE%A2/hexo-blog-based-on-github/</loc>
+    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
+    <data>
+        <display>
+        <title>在github上搭建hexo博客</title>
+        <pubTime>2016-10-13T09:47:25.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/04/09/Java/jaccard-algorithm-in-java/</loc>
+    <lastmod>2017-03-08T07:05:24.785Z</lastmod>
+    <data>
+        <display>
+        <title>Java实现Jaccard算法去重</title>
+        <pubTime>2016-04-09T11:25:34.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Jaccard</tag>
+         
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/02/21/Java/UUID-usage/</loc>
+    <lastmod>2017-03-08T07:05:24.785Z</lastmod>
+    <data>
+        <display>
+        <title>使用UUID</title>
+        <pubTime>2016-02-21T08:46:20.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>UUID</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/01/14/Java/JDK-install/</loc>
+    <lastmod>2017-03-08T07:05:24.784Z</lastmod>
+    <data>
+        <display>
+        <title>JDK安装</title>
+        <pubTime>2016-01-13T19:06:35.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Jdk</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/02/24/Java/AES-encrypt-java/</loc>
+    <lastmod>2017-03-08T07:05:24.783Z</lastmod>
+    <data>
+        <display>
+        <title>Java实现AES加密解密</title>
+        <pubTime>2017-02-24T02:22:51.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>AES</tag>
+         
+        <tag>加密</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/07/29/%E5%A4%A7%E6%95%B0%E6%8D%AE/tool-unit-of-hbase/</loc>
+    <lastmod>2016-07-29T09:28:33.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hbase工具类</title>
+        <pubTime>2016-07-29T09:27:45.000Z</pubTime>
+        
+        <tag>大数据</tag>
+         
+        <tag>Hbase</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>
