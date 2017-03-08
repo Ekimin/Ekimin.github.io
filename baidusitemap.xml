@@ -74,6 +74,26 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
+    <lastmod>2017-03-08T07:05:24.791Z</lastmod>
+    <data>
+        <display>
+        <title>Maven学习笔记</title>
+        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
+        
+        <tag>Maven</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2016/12/08/%E5%B7%A5%E5%85%B7/centos-ss-chrome-omega/</loc>
     <lastmod>2017-03-08T07:05:24.791Z</lastmod>
     <data>
@@ -88,26 +108,6 @@
         <tag>SwithyOmega</tag>
          
         <tag>翻墙</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
-    <lastmod>2017-03-08T07:05:24.791Z</lastmod>
-    <data>
-        <display>
-        <title>Maven学习笔记</title>
-        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
-        
-        <tag>Maven</tag>
          
          
            
@@ -210,28 +210,6 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2015/12/25/Java/use-cursor-read-bigdata/</loc>
-    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
-    <data>
-        <display>
-        <title>JDBC使用游标分页读取大量数据</title>
-        <pubTime>2015-12-24T16:00:00.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>数据库</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wentuotuo.com/2016/10/13/%E5%8D%9A%E5%AE%A2/hexo-blog-based-on-github/</loc>
     <lastmod>2017-03-08T07:05:24.786Z</lastmod>
     <data>
@@ -254,18 +232,16 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/04/09/Java/jaccard-algorithm-in-java/</loc>
-    <lastmod>2017-03-08T07:05:24.785Z</lastmod>
+    <loc>https://wentuotuo.com/2015/12/25/Java/use-cursor-read-bigdata/</loc>
+    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
     <data>
         <display>
-        <title>Java实现Jaccard算法去重</title>
-        <pubTime>2016-04-09T11:25:34.000Z</pubTime>
+        <title>JDBC使用游标分页读取大量数据</title>
+        <pubTime>2015-12-24T16:00:00.000Z</pubTime>
         
         <tag>Java</tag>
          
-        <tag>Jaccard</tag>
-         
-        <tag>算法</tag>
+        <tag>数据库</tag>
          
          
            
@@ -288,6 +264,30 @@
         <tag>Java</tag>
          
         <tag>UUID</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/04/09/Java/jaccard-algorithm-in-java/</loc>
+    <lastmod>2017-03-08T07:05:24.785Z</lastmod>
+    <data>
+        <display>
+        <title>Java实现Jaccard算法去重</title>
+        <pubTime>2016-04-09T11:25:34.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Jaccard</tag>
+         
+        <tag>算法</tag>
          
          
            
