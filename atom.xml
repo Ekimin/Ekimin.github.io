@@ -224,7 +224,7 @@
     <link href="https://wentuotuo.com/2017/02/05/%E5%8D%9A%E5%AE%A2/use-hexo-siteup-personal-blog/"/>
     <id>https://wentuotuo.com/2017/02/05/博客/use-hexo-siteup-personal-blog/</id>
     <published>2017-02-05T03:55:13.000Z</published>
-    <updated>2017-03-08T07:52:47.569Z</updated>
+    <updated>2017-03-08T09:38:44.982Z</updated>
     
     <content type="html"><![CDATA[<p>目录：</p>
 <ul>
@@ -308,9 +308,9 @@
 <h2 id="配置-git-hooks"><a href="#配置-git-hooks" class="headerlink" title="配置 git hooks"></a>配置 git hooks</h2><p>参考资料：<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90" target="_blank" rel="external">自定义 Git - Git 钩子</a></p>
 <p>我们这里要使用的是 post-receive 的 hook，这个 hook 会在整个 git 操作过程完结以后被运行。</p>
 <h3 id="新建-post-receive-文件"><a href="#新建-post-receive-文件" class="headerlink" title="新建 post-receive 文件"></a>新建 post-receive 文件</h3><ul>
-<li>在 /var/www/blog.git/hook/ 目录下新建 post-receive 文件：</li>
+<li>在 /var/www/blog/blog.git/hook/ 目录下新建 post-receive 文件：</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ <span class="built_in">cd</span> /var/www/blog/blog.git/hooks/</div><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ vim post-receive</div><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ sudo vim post-receive</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ <span class="built_in">cd</span> /var/www/blog/blog.git/hooks/</div><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ sudo vim post-receive</div></pre></td></tr></table></figure>
 <ul>
 <li>在新建的文件中输入以下信息并保存：</li>
 </ul>
