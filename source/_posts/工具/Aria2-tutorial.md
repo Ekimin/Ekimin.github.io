@@ -186,7 +186,7 @@ desktop aria2 # aria2c --conf-path /etc/software/aria2/aria2.conf
 
 而后修改 HideRun.vbs，将 Aria2c.exe 与配置文件 Aria2.conf 链接，并实现无命令行启动。 那么日后打开 Aria2 就双击 HideRun.vbs 这个文件而不是双击 aria2c.exe。
 ```
-CreateObject("WScript.Shell").Run "D:\Aria2\aria2c.exe） --conf-path=aria2.conf",0
+CreateObject("WScript.Shell").Run "D:\Aria2\aria2c.exe --conf-path=aria2.conf",0
 ```
 将上面路径修改为你aria2c.exe的路径。
 到这里 Aria2 就配置好了，如果要添加开机自启动将 HideRun.vbs 的快捷方式拖入启动文件夹就 OK 了。

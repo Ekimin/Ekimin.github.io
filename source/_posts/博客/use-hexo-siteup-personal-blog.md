@@ -40,7 +40,7 @@ Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，�
 # Hexo + github 搭建个人博客
 
 使用 Github 作为远程博客仓库优势多多，首先繁琐的服务器环境搭建不用我们操心了，而且也不用担心服务器挂掉，当然免费也是一项大优势。
-具体搭建过程参考本人另一篇博文：[传送门](http://wentuotuo.com/2016/10/13/%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/)
+具体搭建过程参考本人另一篇博文：[传送门](http://wentuotuo.com/2016/10/13/%E5%8D%9A%E5%AE%A2/hexo-blog-based-on-github/)
 
 # Hexo + VPS 搭建个人博客
 

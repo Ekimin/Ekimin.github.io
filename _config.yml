@@ -87,7 +87,7 @@ exclude_generator:
 
 deploy:
   type: git
-  repository: git@47.90.56.252:/var/www/blog/blog.git
+  repository: git@wentuotuo.com:/var/www/blog/blog.git
   branch: master
 
 jsonContent:
