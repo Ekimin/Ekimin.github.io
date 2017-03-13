@@ -284,11 +284,10 @@ Initialized empty Git repository in /var/www/blog/blog.git/
 
 ### 新建 post-receive 文件
 
-- 在 /var/www/blog.git/hook/ 目录下新建 post-receive 文件：
+- 在 /var/www/blog/blog.git/hook/ 目录下新建 post-receive 文件：
 
 ```bash
 [git@iZj6c2vq0s1w6wkap2geanZ hooks]$ cd /var/www/blog/blog.git/hooks/
-[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ vim post-receive
 [git@iZj6c2vq0s1w6wkap2geanZ hooks]$ sudo vim post-receive
 ```
 

@@ -127,8 +127,8 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
     	<developer>
     		<id>ymhe</id>
     		<name>ymhe</name>
-    		<email>heyiminwork@gmail.com</email>
-    		<url>ekimin.github.io</url>  		
+    		<email>youremail@gmail.com</email>
+    		<url>wentuotuo.com</url>  		
     		<organization>Ekimin</organization>
     		<!-- 声明开发者角色 -->
     		<roles>
@@ -141,15 +141,23 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
     <contributors>
     	<contributor>
     		<name>george</name>
-    		<email>georgehym@gmail.com</email>
-    		<url>ekimin.github.io</url>  		
+    		<email>youremail@gmail.com</email>
+    		<url>wentuotuo.com</url>  		
     		<organization>Ekimin</organization>
     		<roles>
     			<role>developer</role>
     		</roles>
     	</contributor>
     </contributors>
+    <!-- 自定义属性 -->
+    <properties>
+            <spring.version>4.0.2.RELEASE</spring.version>
+            <log4j.version>1.2.17</log4j.version>
+            <myproperty>testProperty</myproperty>
+    </properties>
+    
   <build>
+      <!-- 插件配置 -->
       <plugins>
           <plugin>
               <groupId>org.codehaus.mojo</groupId>
@@ -171,6 +179,12 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
               </executions>
           </plugin>
       </plugins>
+      <!-- 定义资源文件夹 -->
+      <resources>
+          <resource>
+              <directory>src/main/java</directory>
+          </resource>                  
+      </resources>
     </build>
   <!-- 远程资源库 -->
   <repositories>
@@ -180,7 +194,7 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
             <url>http://yourhost:8081/nexus/content/groups/public/</url>
         </repository>
     </repositories>
-
+  <!-- 项目依赖 -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -190,6 +204,8 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
     </dependency>
   </dependencies>
 </project>
+
+
 
 ```
 
