@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
+    <lastmod>2017-03-09T02:59:10.878Z</lastmod>
+    <data>
+        <display>
+        <title>Maven学习笔记</title>
+        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
+        
+        <tag>Maven</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2017/02/05/%E5%8D%9A%E5%AE%A2/use-hexo-siteup-personal-blog/</loc>
     <lastmod>2017-03-08T09:38:44.982Z</lastmod>
     <data>
@@ -62,26 +82,6 @@
         <tag>Github</tag>
          
         <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
-    <lastmod>2017-03-08T07:05:24.791Z</lastmod>
-    <data>
-        <display>
-        <title>Maven学习笔记</title>
-        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
-        
-        <tag>Maven</tag>
          
          
            
@@ -166,16 +166,16 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/07/06/%E5%A4%A7%E6%95%B0%E6%8D%AE/manual-of-sqoop/</loc>
+    <loc>https://wentuotuo.com/2016/12/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/demo-of-hbase-in-java-new-API-1.X/</loc>
     <lastmod>2017-03-08T07:05:24.788Z</lastmod>
     <data>
         <display>
-        <title>Sqoop抽数</title>
-        <pubTime>2016-07-06T08:45:22.000Z</pubTime>
+        <title>Hbase新API Demo</title>
+        <pubTime>2016-12-22T14:34:08.000Z</pubTime>
         
         <tag>大数据</tag>
          
-        <tag>Sqoop</tag>
+        <tag>Hbase</tag>
          
          
            
@@ -188,16 +188,16 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/12/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/demo-of-hbase-in-java-new-API-1.X/</loc>
+    <loc>https://wentuotuo.com/2016/07/06/%E5%A4%A7%E6%95%B0%E6%8D%AE/manual-of-sqoop/</loc>
     <lastmod>2017-03-08T07:05:24.788Z</lastmod>
     <data>
         <display>
-        <title>Hbase新API Demo</title>
-        <pubTime>2016-12-22T14:34:08.000Z</pubTime>
+        <title>Sqoop抽数</title>
+        <pubTime>2016-07-06T08:45:22.000Z</pubTime>
         
         <tag>大数据</tag>
          
-        <tag>Hbase</tag>
+        <tag>Sqoop</tag>
          
          
            
