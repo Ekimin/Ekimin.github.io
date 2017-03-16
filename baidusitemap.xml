@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
+    <lastmod>2017-03-16T07:33:22.523Z</lastmod>
+    <data>
+        <display>
+        <title>Aria2安装配置</title>
+        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
+        
+        <tag>Aria2</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/03/15/%E5%B7%A5%E5%85%B7/atom-manual/</loc>
+    <lastmod>2017-03-16T07:32:51.371Z</lastmod>
+    <data>
+        <display>
+        <title>Atom 手册</title>
+        <pubTime>2017-03-14T16:00:00.000Z</pubTime>
+        
+        <tag>Atom</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2016/02/21/Java/UUID-usage/</loc>
     <lastmod>2017-03-16T06:22:44.579Z</lastmod>
     <data>
@@ -94,26 +136,6 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
-    <lastmod>2017-03-16T06:22:16.868Z</lastmod>
-    <data>
-        <display>
-        <title>Aria2安装配置</title>
-        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
-        
-        <tag>Aria2</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wentuotuo.com/2016/09/25/%E5%A4%A7%E6%95%B0%E6%8D%AE/relation-between-hive-and-hbase/</loc>
     <lastmod>2017-03-16T06:22:02.261Z</lastmod>
     <data>
@@ -191,9 +213,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Github</tag>
-         
         <tag>博客</tag>
+         
+        <tag>Github</tag>
          
          
            

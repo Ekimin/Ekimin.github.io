@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wentuotuo.com/"/>
-  <updated>2017-03-16T06:22:23.095Z</updated>
+  <updated>2017-03-16T07:32:51.371Z</updated>
   <id>https://wentuotuo.com/</id>
   
   <author>
@@ -14,6 +14,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Atom 手册</title>
+    <link href="https://wentuotuo.com/2017/03/15/%E5%B7%A5%E5%85%B7/atom-manual/"/>
+    <id>https://wentuotuo.com/2017/03/15/工具/atom-manual/</id>
+    <published>2017-03-14T16:00:00.000Z</published>
+    <updated>2017-03-16T07:32:51.371Z</updated>
+    
+    <content type="html"><![CDATA[<p>Atom 手册</p>
+<a id="more"></a>
+<p>输入apm查看是否安装了Atom Package Manager.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">C:\Users\ymhe&gt;apm</div><div class="line"></div><div class="line">apm - Atom Package Manager powered by https://atom.io</div><div class="line"></div><div class="line">Usage: apm &lt;<span class="built_in">command</span>&gt;</div><div class="line"></div><div class="line"><span class="built_in">where</span> &lt;<span class="built_in">command</span>&gt; is one of:</div><div class="line">    clean, config, dedupe, deinstall, delete, dev, develop, <span class="built_in">disable</span>, docs,</div><div class="line">    <span class="built_in">enable</span>, erase, featured, home, i, init, install, link, linked, links, list,</div><div class="line">    ln, lns, login, ls, open, outdated, publish, rebuild, rebuild-module-cache,</div><div class="line">    remove, rm, search, show, star, starred, stars, <span class="built_in">test</span>, uninstall, unlink,</div><div class="line">    unpublish, unstar, update, upgrade, view.</div><div class="line"></div><div class="line">Run `apm <span class="built_in">help</span> &lt;<span class="built_in">command</span>&gt;` to see the more details about a specific command.</div><div class="line"></div><div class="line">Options:</div><div class="line">  --color        Enable colored output                                     [boolean] [default: <span class="literal">true</span>]</div><div class="line">  -v, --version  Print the apm version</div><div class="line">  -h, --help     Print this usage message</div><div class="line"></div><div class="line">  Prefix an option with `no-` to <span class="built_in">set</span> it to <span class="literal">false</span> such as --no-color to <span class="built_in">disable</span>  colored output.</div></pre></td></tr></table></figure>
+<ul>
+<li>安装汉化插件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">C:\Users\ymhe&gt;apm install simplified-chinese-menu</div><div class="line">Installing simplified-chinese-menu to C:\Users\ymhe\.atom\packages <span class="keyword">done</span></div></pre></td></tr></table></figure>
+<ul>
+<li>安装 minimap</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">C:\Users\ymhe&gt;apm install minimap</div><div class="line">Installing minimap to C:\Users\ymhe\.atom\packages <span class="keyword">done</span></div></pre></td></tr></table></figure>
+<ul>
+<li>开启 markdown 预览</li>
+</ul>
+<p>菜单栏 扩展-Markdown Preview-Toggle Preview</p>
+<hr>
+<p>有没有感觉很酷炫</p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/image/atom%E7%95%8C%E9%9D%A2.png" alt=""></p>
+<ul>
+<li>terminal-plus</li>
+</ul>
+<p>cmd+` 打开终端</p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/image/atomterminal.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Atom 手册&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Atom" scheme="https://wentuotuo.com/tags/Atom/"/>
+    
+      <category term="工具" scheme="https://wentuotuo.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>Git 教程</title>
@@ -368,64 +416,9 @@
     
       <category term="Hexo" scheme="https://wentuotuo.com/tags/Hexo/"/>
     
-      <category term="Github" scheme="https://wentuotuo.com/tags/Github/"/>
-    
       <category term="博客" scheme="https://wentuotuo.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-  </entry>
-  
-  <entry>
-    <title>IntelliJ IDEA 笔记</title>
-    <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/"/>
-    <id>https://wentuotuo.com/2017/01/16/工具/IntelliJ-IDEA-tutorial/</id>
-    <published>2017-01-16T06:13:57.000Z</published>
-    <updated>2017-03-08T07:05:24.790Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文记录了IDEA的使用配置和遇到的问题，方便后面查询</p>
-<a id="more"></a>
-<h1 id="IDEA-集成SVN"><a href="#IDEA-集成SVN" class="headerlink" title="IDEA 集成SVN"></a>IDEA 集成SVN</h1><ul>
-<li>环境：</li>
-</ul>
-<p>OS：Windows 10 (64位)</p>
-<p>IDEA版本：IntelliJ IDEA 2016.3.4 Build #IU-163.12024.16, built on January 31, 2017</p>
-<ul>
-<li>下载安装</li>
-</ul>
-<p><a href="https://tortoisesvn.net/" target="_blank" rel="external">SVN官网</a>下载SVN并安装。</p>
-<p><strong>注意：安装时需要选择安装command line client tools, 默认这一项是不安装的。如果不安装，那么后面找不到svn.exe这个文件</strong></p>
-<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85.png" alt=""></p>
-<ul>
-<li>在IDEA中配置SVN</li>
-</ul>
-<p>File-settings-subversion, 勾选Use command line client，选择刚刚安装的SVN中的svn.exe。(如果在bin下找不到这个文件，返回上一步检查安装的时候是否选择安装了command line client tool)</p>
-<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" alt=""></p>
-<h1 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h1><p><strong>IDEA乱码一般以下几类，按照如下设置后基本都可以解决</strong></p>
-<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8。也可以在右下角快捷改变当前文件的编码。改变之后会提示你reload文件。</p>
-<h2 id="控制台乱码"><a href="#控制台乱码" class="headerlink" title="控制台乱码"></a>控制台乱码</h2><ul>
-<li>执行main函数时乱码</li>
-</ul>
-<p>同样是打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行</p>
-<ul>
-<li>运行tomcat等容器时乱码</li>
-</ul>
-<p>打开Run/Debug Configuration,选择你的tomcat</p>
-<p>然后在  Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
-<h2 id="如果上面不管用，可以尝试下面方法修改配置文件"><a href="#如果上面不管用，可以尝试下面方法修改配置文件" class="headerlink" title="如果上面不管用，可以尝试下面方法修改配置文件"></a>如果上面不管用，可以尝试下面方法修改配置文件</h2><p>打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8<br>然后重启IDEA，一般问题都可以解决</p>
-<h1 id="IDEA-激活"><a href="#IDEA-激活" class="headerlink" title="IDEA 激活"></a>IDEA 激活</h1><p><a href="http://idea.lanyus.com/" target="_blank" rel="external">激活服务器</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录了IDEA的使用配置和遇到的问题，方便后面查询&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="IDEA" scheme="https://wentuotuo.com/tags/IDEA/"/>
-    
-      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
+      <category term="Github" scheme="https://wentuotuo.com/tags/Github/"/>
     
   </entry>
   
@@ -519,6 +512,61 @@
   </entry>
   
   <entry>
+    <title>IntelliJ IDEA 笔记</title>
+    <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/"/>
+    <id>https://wentuotuo.com/2017/01/16/工具/IntelliJ-IDEA-tutorial/</id>
+    <published>2017-01-16T06:13:57.000Z</published>
+    <updated>2017-03-08T07:05:24.790Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文记录了IDEA的使用配置和遇到的问题，方便后面查询</p>
+<a id="more"></a>
+<h1 id="IDEA-集成SVN"><a href="#IDEA-集成SVN" class="headerlink" title="IDEA 集成SVN"></a>IDEA 集成SVN</h1><ul>
+<li>环境：</li>
+</ul>
+<p>OS：Windows 10 (64位)</p>
+<p>IDEA版本：IntelliJ IDEA 2016.3.4 Build #IU-163.12024.16, built on January 31, 2017</p>
+<ul>
+<li>下载安装</li>
+</ul>
+<p><a href="https://tortoisesvn.net/" target="_blank" rel="external">SVN官网</a>下载SVN并安装。</p>
+<p><strong>注意：安装时需要选择安装command line client tools, 默认这一项是不安装的。如果不安装，那么后面找不到svn.exe这个文件</strong></p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85.png" alt=""></p>
+<ul>
+<li>在IDEA中配置SVN</li>
+</ul>
+<p>File-settings-subversion, 勾选Use command line client，选择刚刚安装的SVN中的svn.exe。(如果在bin下找不到这个文件，返回上一步检查安装的时候是否选择安装了command line client tool)</p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" alt=""></p>
+<h1 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h1><p><strong>IDEA乱码一般以下几类，按照如下设置后基本都可以解决</strong></p>
+<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8。也可以在右下角快捷改变当前文件的编码。改变之后会提示你reload文件。</p>
+<h2 id="控制台乱码"><a href="#控制台乱码" class="headerlink" title="控制台乱码"></a>控制台乱码</h2><ul>
+<li>执行main函数时乱码</li>
+</ul>
+<p>同样是打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行</p>
+<ul>
+<li>运行tomcat等容器时乱码</li>
+</ul>
+<p>打开Run/Debug Configuration,选择你的tomcat</p>
+<p>然后在  Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
+<h2 id="如果上面不管用，可以尝试下面方法修改配置文件"><a href="#如果上面不管用，可以尝试下面方法修改配置文件" class="headerlink" title="如果上面不管用，可以尝试下面方法修改配置文件"></a>如果上面不管用，可以尝试下面方法修改配置文件</h2><p>打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8<br>然后重启IDEA，一般问题都可以解决</p>
+<h1 id="IDEA-激活"><a href="#IDEA-激活" class="headerlink" title="IDEA 激活"></a>IDEA 激活</h1><p><a href="http://idea.lanyus.com/" target="_blank" rel="external">激活服务器</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录了IDEA的使用配置和遇到的问题，方便后面查询&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="IDEA" scheme="https://wentuotuo.com/tags/IDEA/"/>
+    
+      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hbase新API Demo</title>
     <link href="https://wentuotuo.com/2016/12/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/demo-of-hbase-in-java-new-API-1.X/"/>
     <id>https://wentuotuo.com/2016/12/22/大数据/demo-of-hbase-in-java-new-API-1.X/</id>
@@ -594,7 +642,7 @@
     <link href="https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/"/>
     <id>https://wentuotuo.com/2016/12/07/工具/Aria2-tutorial/</id>
     <published>2016-12-07T15:31:31.000Z</published>
-    <updated>2017-03-16T06:22:16.868Z</updated>
+    <updated>2017-03-16T07:33:22.523Z</updated>
     
     <content type="html"><![CDATA[<h1 id="认识-Aria2"><a href="#认识-Aria2" class="headerlink" title="认识 Aria2"></a>认识 Aria2</h1><p>Aria2 是一个轻量级多协议和多源 命令行 下载实用工具。它支持 HTTP / HTTPS, FTP, SFTP, bt 和 Metalink。通过内置 Aria2 可以操作 json - rpc 和 xml - rpc。对，Aria2 没有 GUI 图形界面，只有粗糙的命令行界面！但这也正是 Aria2 之轻快好省所在。</p>
 <hr>
