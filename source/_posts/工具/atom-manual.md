@@ -1,13 +1,15 @@
 ---
 title: Atom 手册
-date: 2017-03-15
-tags: [Atom, 工具]
+tags:
+  - Atom
+  - 工具
 categories: 工具
-layout: post
+date: 2017-03-15 00:00:00
 updated:
 comments:
 permalink:
 ---
+
 
 Atom 手册
 
@@ -65,6 +67,6 @@ Installing minimap to C:\Users\ymhe\.atom\packages done
 
 - terminal-plus
 
-cmd+shift+t 打开终端
+cmd+` 打开终端
 
-注：Win 10
+![](http://oduq3lfcc.bkt.clouddn.com/image/atomterminal.png)
