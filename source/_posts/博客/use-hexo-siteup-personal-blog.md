@@ -1,11 +1,12 @@
+---
 title: 用 Hexo 搭建个人博客
 date: 2017-02-05 11:55:13
 tags: [Hexo, Github, 博客]
 categories: 博客
 layout: post
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
 目录：
@@ -90,7 +91,7 @@ yum install nodejs
 
 新建一个名叫 git 的用户，如果之前已经建立了，则跳过此命令
 ```bash
-adduser git 
+adduser git
 ```
 
 ### 给 git 用户添加 sudo 权限
@@ -149,7 +150,7 @@ sudo passwd git #该命令执行后输入两次要设置的密码
 
 服务器中/home/git/.ssh/authorized_keys文件在这里：
 ```bash
-[root@iZj6c2vq0s1w6wkap2geanZ git]# cd /home/git 
+[root@iZj6c2vq0s1w6wkap2geanZ git]# cd /home/git
 [root@iZj6c2vq0s1w6wkap2geanZ git]# ls -al
 total 24
 drwx------  3 git  git  4096 Nov 18 10:26 .
@@ -269,7 +270,7 @@ Administrator. It usually boils down to these three things:
 
 ```bash
 [git@iZj6c2vq0s1w6wkap2geanZ blog]$ sudo git init --bare blog.git
-[sudo] password for git: 
+[sudo] password for git:
 Initialized empty Git repository in /var/www/blog/blog.git/
 ```
 
@@ -380,8 +381,4 @@ npm install hexo-algolia --save #使用algolia搜索的还需要安装此插件
 #...其他插件安装
 ```
 
-- 环境恢复成功，可以使用hexo g -d 发布博客了 
-
-
-
-
+- 环境恢复成功，可以使用hexo g -d 发布博客了

@@ -1,13 +1,13 @@
-title: 
-date: 
-tags: 
-categories: 
-layout: 
-updated: 
-comments: 
-permalink: 
+---
+title:
+date:
+tags:
+categories:
+layout:
+updated:
+comments:
+permalink:
 ---
 
 
 <!--more-->
-

@@ -1,11 +1,12 @@
+---
 title: RMI远程调用
 date: 2017-01-02 15:58:22
 tags: [RMI, Java]
 categories: Java
 layout: post
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
 # 什么是RMI？
@@ -82,4 +83,3 @@ public interface ISayHello extends Remote {
 ```java
 
 ```
-

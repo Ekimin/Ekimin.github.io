@@ -1,10 +1,11 @@
+---
 title: Solr 6.4.1 搭建和使用教程
 date: 2016-08-22 19:22:54
 tags: [Solr, 大数据]
 categories: 大数据
 layout: post
-updated: 
-comments: 
+updated:
+comments:
 permalink: 
 ---
 
@@ -18,7 +19,7 @@ permalink:
 Solr：solr-6.4.1
 JDK：1.8.0_111
 tomcat：8.5.1 （8版本都支持）
-OS： CentOs 7 
+OS： CentOs 7
 
 
 ## 单例模式下部署

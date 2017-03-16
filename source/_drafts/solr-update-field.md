@@ -1,11 +1,12 @@
+---
 title: 修改solr中数据
-date: 
-tags: 
-categories: 
+date:
+tags:
+categories:
 layout: 
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
 

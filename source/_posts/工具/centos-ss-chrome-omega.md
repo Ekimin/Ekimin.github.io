@@ -23,7 +23,7 @@ permalink:
 ## 安装ss
 
 ```
-[root@iZj6c2vq0s1w6wkap2geanZ ~]# yum install python-setuptools && easy_install pip 
+[root@iZj6c2vq0s1w6wkap2geanZ ~]# yum install python-setuptools && easy_install pip
 Loaded plugins: security
 base                                                                                                                                                                                                                                                   | 3.7 kB     00:00     
 epel                                                                                                                                                                                                                                                   | 4.3 kB     00:00     
@@ -60,8 +60,8 @@ Successfully installed shadowsocks-2.8.2
 
 ## 创建配置文件/etc/shadowsocks.json
 ```
-[root@iZj6c2vq0s1w6wkap2geanZ ~]# touch /etc/shadowsocks.json 
-[root@iZj6c2vq0s1w6wkap2geanZ ~]# vim /etc/shadowsocks.json 
+[root@iZj6c2vq0s1w6wkap2geanZ ~]# touch /etc/shadowsocks.json
+[root@iZj6c2vq0s1w6wkap2geanZ ~]# vim /etc/shadowsocks.json
 ```
 配置文件内容
 ```

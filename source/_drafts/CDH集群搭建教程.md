@@ -1,11 +1,12 @@
+---
 title: CDH集群搭建教程
-date: 
+date:
 tags: [大数据, CDH, Cloudera, 集群]
 categories: 大数据
 layout: post
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
 搭建环境:
@@ -34,7 +35,7 @@ permalink:
 [root@iZuf61s6x9zl5wsik38xgaZ ~]# lsb_release -a
 LSB Version:	:core-4.1-amd64:core-4.1-noarch
 Distributor ID:	CentOS
-Description:	CentOS Linux release 7.2.1511 (Core) 
+Description:	CentOS Linux release 7.2.1511 (Core)
 Release:	7.2.1511
 Codename:	Core
 ```

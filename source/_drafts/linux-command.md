@@ -1,11 +1,12 @@
+---
 title: Linux常用命令
 date: 2015-12-05
 tags: [Linux, OS]
 categories: 操作系统
 layout: post
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
 一些linux常用命令
@@ -128,7 +129,7 @@ W          写         数值表示为2
 X           可执行  数值表示为1
 
 ### 更改权限
-sudo chmod [u所属用户  g所属组  o其他用户  a所有用户]  [+增加权限  -减少权限]  [r  w  x]   目录名 
+sudo chmod [u所属用户  g所属组  o其他用户  a所有用户]  [+增加权限  -减少权限]  [r  w  x]   目录名
 例如：有一个文件filename，权限为“-rw-r----x” ,将权限值改为"-rwxrw-r-x"，用数值表示为765
 sudo chmod u+x g+w o+r  filename
 上面的例子可以用数值表示
@@ -145,9 +146,9 @@ sudo chmod 765 filename
 ``` Shell
 ymhe@he-desktop ~ $ passwd
 Changing password for ymhe.
-(current) UNIX password: 
-Enter new UNIX password: 
-Retype new UNIX password: 
+(current) UNIX password:
+Enter new UNIX password:
+Retype new UNIX password:
 ```
 
 ## 组

@@ -1,9 +1,9 @@
-----
+---
 title: Sqoop抽数
 date: 2016-07-06 16:45:22
 tags: [大数据, Sqoop]
 categories: 大数据
-----
+---
 
 ## 从Oracle抽数到Hbase
 
@@ -23,5 +23,5 @@ sqoop create-hive-table -connect jdbc:oracle:thin:@192.168.1.51:1521:orcl -usern
 ```
 * 抽数
 ```HiveSql
-LOAD DATA INPATH '/amarsoft/test/hivebackup/dt_clear_data/part-m-*' OVERWRITE INTO TABLE dt_clear_data 
+LOAD DATA INPATH '/amarsoft/test/hivebackup/dt_clear_data/part-m-*' OVERWRITE INTO TABLE dt_clear_data
 ```

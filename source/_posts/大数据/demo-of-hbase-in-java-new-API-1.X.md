@@ -1,11 +1,12 @@
+---
 title: Hbase新API Demo
 date: 2016-12-22 22:34:08
 tags: [大数据, Hbase]
 categories: 大数据
 layout: post
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
 HBase 1.0版是一个稳定版本，可以用于生产环境，而对于0.98.x系列版本，HBase开发团队仍然会继续维护和开发。

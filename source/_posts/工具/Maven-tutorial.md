@@ -4,6 +4,7 @@ date: 2017-01-16 14:13:57
 tags: Maven
 categories: 工具
 ---
+
 # Maven 学习笔记
 
 ## 常用命令
@@ -18,7 +19,7 @@ mvn <phase1> <phase2> ...
 
 - mvn archetype:generate 使用指定原型创建一个 Maven 项目。
     - 属性 interactiveMode=true/false 是否交互模式，默认true
-    - 属性 groupId 
+    - 属性 groupId
     - 属性 artifactId
     - 属性 package
     - 属性 archetypeAtifactId 指定建立项目使用的模板，如：maven-archetype-webapp
@@ -31,10 +32,10 @@ mvn <phase1> <phase2> ...
 上面命令会在当前目录创建一个名叫testMaven的项目
 
 
-### 编译 
+### 编译
 > mvn compile
 
-### 执行 
+### 执行
 > mvn exec:java -Dexec.mainClass="com.wentuotuo.testMaven.App"
 
 ## Maven 项目目录约定
@@ -155,7 +156,7 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
             <log4j.version>1.2.17</log4j.version>
             <myproperty>testProperty</myproperty>
     </properties>
-    
+
   <build>
       <!-- 插件配置 -->
       <plugins>
@@ -266,7 +267,7 @@ under the License.
    | Default: ${user.home}/.m2/repository
    -->
   <localRepository>E:\Config\Maven\repository</localRepository>
-  
+
 
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
@@ -337,7 +338,7 @@ under the License.
       <username>admin</username>
       <password>admin123</password>
     </server>
-    
+
 
     <!-- Another sample, using keys to authenticate.
     <server>
@@ -372,7 +373,7 @@ under the License.
       <name>WTT mirror</name>
       <url>http://yourhost:8081/nexus/content/groups/public/</url>
     </mirror>
-     
+
   </mirrors>
 
   <!-- profiles
@@ -425,7 +426,7 @@ under the License.
         </repository>
       </repositories>
     </profile>
-    
+
 
     <!--
      | Here is another profile, activated by the system property 'target-env' with a value of 'dev',
@@ -471,7 +472,7 @@ under the License.
     <activeProfile>nexus</activeProfile>
     <!-- <activeProfile>anotherAlwaysActiveProfile</activeProfile> -->
   </activeProfiles>
-  
+
 </settings>
 
 

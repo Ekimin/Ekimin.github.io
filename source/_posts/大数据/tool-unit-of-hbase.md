@@ -1,11 +1,12 @@
-title: Hbase工具类
+---
+title: Hbase 工具类
 date: 2016-07-29 17:27:45
 tags: [大数据, Hbase]
 categories: 大数据
 layout: post
 updated: 2016-07-29 17:28:33
-comments: 
-permalink: 
+comments:
+permalink:
 ---
 
 Hbase工具类，包含若干常用方法。
@@ -49,7 +50,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 /**
  * Hbase工具类
- * 
+ *
  **/
 public class HbaseCommons {
 
@@ -58,12 +59,12 @@ public class HbaseCommons {
 
 	/**
 	 * 创建一个表
-	 * 
+	 *
 	 * @param tableName
 	 *            表名字
 	 * @param columnFamilys
 	 *            列簇
-	 * 
+	 *
 	 **/
 	public static void createTable(String tableName, String[] columnFamilys) throws Exception {
 		// 创建表（创建表、删除表使用HBaseAdmin）
@@ -89,7 +90,7 @@ public class HbaseCommons {
 
 	/**
 	 * 删除一个表
-	 * 
+	 *
 	 * @param tableName
 	 *            删除的表名
 	 */
@@ -107,7 +108,7 @@ public class HbaseCommons {
 
 	/**
 	 * 插入一条数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 * @param columnFamily
@@ -129,12 +130,12 @@ public class HbaseCommons {
 
 	/**
 	 * 批量添加数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名字
 	 * @param rows
 	 *            rows的数据格式："rowskey,columnFamily,column,value"
-	 * 
+	 *
 	 **/
 	public static void insertList(String tableName, List<String> rows) throws Exception {
 		HTable table = new HTable(conf, tableName);
@@ -153,12 +154,12 @@ public class HbaseCommons {
 
 	/**
 	 * 删除一条数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 * @param row
 	 *            rowkey行键
-	 * 
+	 *
 	 */
 	public static void deleteOneRow(String tableName, String row) throws Exception {
 
@@ -170,12 +171,12 @@ public class HbaseCommons {
 
 	/**
 	 * 删除多条数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 * @param rows
 	 *            行健集合
-	 * 
+	 *
 	 **/
 	public static void deleteList(String tableName, String rows[]) throws Exception {
 		HTable table = new HTable(conf, tableName);
@@ -190,7 +191,7 @@ public class HbaseCommons {
 
 	/**
 	 * rowkey模糊条件查询
-	 * 
+	 *
 	 * @param key
 	 *            模糊rowkey内容
 	 * @throws Exception
@@ -206,7 +207,7 @@ public class HbaseCommons {
 
 	/**
 	 * rowkey模糊条件查询
-	 * 
+	 *
 	 * @param key
 	 *            模糊rowkey内容
 	 * @param columnFalimy
@@ -228,12 +229,12 @@ public class HbaseCommons {
 
 	/**
 	 * 获取一条数据，根据rowkey
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 * @param row
 	 *            行健
-	 * 
+	 *
 	 **/
 	public static Result getOneRow(String tableName, String row) throws Exception {
 		HTable table = new HTable(conf, tableName);
@@ -246,7 +247,7 @@ public class HbaseCommons {
 
 	/**
 	 * 查看某个表下的所有数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 */
@@ -264,7 +265,7 @@ public class HbaseCommons {
 
 	/**
 	 * 具体查询row中的列簇的数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 * @param rowKey
@@ -283,7 +284,7 @@ public class HbaseCommons {
 
 	/**
 	 * 具体查询row中的一条数据
-	 * 
+	 *
 	 * @param tableName
 	 *            表名
 	 * @param rowKey
@@ -305,7 +306,7 @@ public class HbaseCommons {
 
 	/**
 	 * 打印一条记录的详情
-	 * 
+	 *
 	 */
 	public static void printRecoder(Result result) throws Exception {
 		for (Cell cell : result.rawCells()) {

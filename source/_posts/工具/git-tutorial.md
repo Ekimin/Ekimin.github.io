@@ -19,7 +19,7 @@ permalink:
 # Git 教程
 ## 安装Git
 
-- 首先确认服务器是否安装Git 
+- 首先确认服务器是否安装Git
 
 ```
 [root@iZj6c2vq0s1w6wkap2geanZ ~]# rpm -qa git
@@ -41,7 +41,7 @@ $ yum install git
 
 此时在阿里云服务器的根目录：/home文件夹下会自动新增一个文件夹git
 
-- 按这个层级建立文件用于存放客户端用户的公钥：/home/git/.ssh/authorized_keys 
+- 按这个层级建立文件用于存放客户端用户的公钥：/home/git/.ssh/authorized_keys
 
 在本地客户端的git bash中通过命令：（windows先装Git客户端）
 
@@ -172,7 +172,7 @@ git config --global user.email "heyiminwork@gmail.com"
 
 这个命令，会在“~/.gitconfig”中以如下形式输出设置文件：
 ```
-[ymhe@iZ114e8q2mjZ ~]$ cat ~/.gitconfig 
+[ymhe@iZ114e8q2mjZ ~]$ cat ~/.gitconfig
 [user]
 	name = Ekimin
 	email = heyiminwork@gmail.com
@@ -364,7 +364,7 @@ Branch dev set up to track remote branch dev from origin.
 
 - 删除本地分支 dev
 ```git
-git branch -d <branch-name> 
+git branch -d <branch-name>
 git branch -D <branch-name> #强制删除（分支没有merge也会被删除）
 ```
 

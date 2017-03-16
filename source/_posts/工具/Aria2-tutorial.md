@@ -1,3 +1,4 @@
+---
 title: Aria2安装配置
 date: 2016-12-07 23:31:31
 tags: Aria2
@@ -32,11 +33,11 @@ apt-get aria2
 * 也可以下载源码安装。
 
 ## 配置
-### 建立目录 
+### 建立目录
 * /etc/software/aria2 用于放置配置文件的地方
 * /home/aria2/downloads 用于放下载的文件
 
-### 新建文件 
+### 新建文件
 * /etc/software/aria2/aria2.conf
 * /etc/software/aria2/aria2.session
 * /etc/software/aria2/Aria2.log
@@ -163,20 +164,20 @@ bt-save-metadata=true
 ### 启动服务并指定aria2配置文件的路径
 
 ```
-desktop aria2 # aria2c --conf-path /etc/software/aria2/aria2.conf 
+desktop aria2 # aria2c --conf-path /etc/software/aria2/aria2.conf
 
 07/23 18:13:30 [WARN] Neither --rpc-secret nor a combination of --rpc-user and --rpc-passwd is set. This is insecure. It is extremely recommended to specify --rpc-secret with the adequate secrecy or now deprecated --rpc-user and --rpc-passwd.
 
 07/23 18:13:30 [NOTICE] IPv4 RPC: listening on TCP port 6800
 ```
 
-# Window 
+# Window
 基本上Window配置和linux差不多这里简单说下不同的地方
 ## 下载
 **[Aria2官方下载地址](http://sourceforge.net/projects/aria2/files/stable/)**
 
 ## 配置
-### 新建文件 
+### 新建文件
 * aria2.conf
 * aria2.session
 * Aria2.log
