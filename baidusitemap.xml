@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2016/02/21/Java/UUID-usage/</loc>
+    <lastmod>2017-03-16T06:22:44.579Z</lastmod>
+    <data>
+        <display>
+        <title>使用UUID</title>
+        <pubTime>2016-02-21T08:46:20.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>UUID</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
-    <lastmod>2017-03-09T02:59:10.878Z</lastmod>
+    <lastmod>2017-03-16T06:22:33.027Z</lastmod>
     <data>
         <display>
         <title>Maven学习笔记</title>
@@ -24,56 +46,8 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/02/05/%E5%8D%9A%E5%AE%A2/use-hexo-siteup-personal-blog/</loc>
-    <lastmod>2017-03-08T09:38:44.982Z</lastmod>
-    <data>
-        <display>
-        <title>用 Hexo 搭建个人博客</title>
-        <pubTime>2017-02-05T03:55:13.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>博客</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
-    <lastmod>2017-03-08T07:53:16.244Z</lastmod>
-    <data>
-        <display>
-        <title>Aria2安装配置</title>
-        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
-        
-        <tag>Aria2</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-    
-  <url>
     <loc>https://wentuotuo.com/2017/03/01/%E5%B7%A5%E5%85%B7/git-tutorial/</loc>
-    <lastmod>2017-03-08T07:05:24.792Z</lastmod>
+    <lastmod>2017-03-16T06:22:23.095Z</lastmod>
     <data>
         <display>
         <title>Git 教程</title>
@@ -95,7 +69,7 @@
     
   <url>
     <loc>https://wentuotuo.com/2016/12/08/%E5%B7%A5%E5%85%B7/centos-ss-chrome-omega/</loc>
-    <lastmod>2017-03-08T07:05:24.791Z</lastmod>
+    <lastmod>2017-03-16T06:22:20.591Z</lastmod>
     <data>
         <display>
         <title>CentOs安装配置SS+Chrome+SwitchyOmega配置</title>
@@ -120,16 +94,14 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/</loc>
-    <lastmod>2017-03-08T07:05:24.790Z</lastmod>
+    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
+    <lastmod>2017-03-16T06:22:16.868Z</lastmod>
     <data>
         <display>
-        <title>IntelliJ IDEA 笔记</title>
-        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
+        <title>Aria2安装配置</title>
+        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
         
-        <tag>IDEA</tag>
-         
-        <tag>乱码</tag>
+        <tag>Aria2</tag>
          
          
            
@@ -143,7 +115,7 @@
     
   <url>
     <loc>https://wentuotuo.com/2016/09/25/%E5%A4%A7%E6%95%B0%E6%8D%AE/relation-between-hive-and-hbase/</loc>
-    <lastmod>2017-03-08T07:05:24.789Z</lastmod>
+    <lastmod>2017-03-16T06:22:02.261Z</lastmod>
     <data>
         <display>
         <title>Hive和Hbase的关系</title>
@@ -151,9 +123,9 @@
         
         <tag>大数据</tag>
          
-        <tag>Hive</tag>
-         
         <tag>Hbase</tag>
+         
+        <tag>Hive</tag>
          
          
            
@@ -167,7 +139,7 @@
     
   <url>
     <loc>https://wentuotuo.com/2016/07/06/%E5%A4%A7%E6%95%B0%E6%8D%AE/manual-of-sqoop/</loc>
-    <lastmod>2017-03-08T07:05:24.788Z</lastmod>
+    <lastmod>2017-03-16T06:21:57.727Z</lastmod>
     <data>
         <display>
         <title>Sqoop抽数</title>
@@ -189,7 +161,7 @@
     
   <url>
     <loc>https://wentuotuo.com/2016/12/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/demo-of-hbase-in-java-new-API-1.X/</loc>
-    <lastmod>2017-03-08T07:05:24.788Z</lastmod>
+    <lastmod>2017-03-16T06:21:47.095Z</lastmod>
     <data>
         <display>
         <title>Hbase新API Demo</title>
@@ -203,6 +175,56 @@
            
              
               <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/02/05/%E5%8D%9A%E5%AE%A2/use-hexo-siteup-personal-blog/</loc>
+    <lastmod>2017-03-16T06:21:42.189Z</lastmod>
+    <data>
+        <display>
+        <title>用 Hexo 搭建个人博客</title>
+        <pubTime>2017-02-05T03:55:13.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Github</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/</loc>
+    <lastmod>2017-03-08T07:05:24.790Z</lastmod>
+    <data>
+        <display>
+        <title>IntelliJ IDEA 笔记</title>
+        <pubTime>2017-01-16T06:13:57.000Z</pubTime>
+        
+        <tag>IDEA</tag>
+         
+        <tag>乱码</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -278,28 +300,6 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/02/21/Java/UUID-usage/</loc>
-    <lastmod>2017-03-08T07:05:24.785Z</lastmod>
-    <data>
-        <display>
-        <title>使用UUID</title>
-        <pubTime>2016-02-21T08:46:20.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>UUID</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wentuotuo.com/2016/01/14/Java/JDK-install/</loc>
     <lastmod>2017-03-08T07:05:24.784Z</lastmod>
     <data>
@@ -350,7 +350,7 @@
     <lastmod>2016-07-29T09:28:33.000Z</lastmod>
     <data>
         <display>
-        <title>Hbase工具类</title>
+        <title>Hbase 工具类</title>
         <pubTime>2016-07-29T09:27:45.000Z</pubTime>
         
         <tag>大数据</tag>

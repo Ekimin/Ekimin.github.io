@@ -123,7 +123,7 @@ Git 常用命令汇总">
 <meta property="og:image" content="leanote://file/getImage?fileId=581980ceab644162e100b4b7">
 <meta property="og:image" content="leanote://file/getImage?fileId=581980ceab644162e100b4b9">
 <meta property="og:image" content="leanote://file/getImage?fileId=581980ceab644162e100b4b6">
-<meta property="og:updated_time" content="2017-03-08T07:05:24.792Z">
+<meta property="og:updated_time" content="2017-03-16T06:22:23.095Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 教程">
 <meta name="twitter:description" content="目录：
@@ -473,7 +473,7 @@ Git 常用命令汇总">
 </ul>
 <a id="more"></a>
 <h1 id="Git-教程"><a href="#Git-教程" class="headerlink" title="Git 教程"></a>Git 教程</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ul>
-<li>首先确认服务器是否安装Git </li>
+<li>首先确认服务器是否安装Git</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ ~]# rpm -qa git</div><div class="line">git-1.7.1-3.el6_4.1.x86_64</div></pre></td></tr></table></figure>
 <ul>
@@ -486,7 +486,7 @@ Git 常用命令汇总">
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ ~]# adduser git</div></pre></td></tr></table></figure>
 <p>此时在阿里云服务器的根目录：/home文件夹下会自动新增一个文件夹git</p>
 <ul>
-<li>按这个层级建立文件用于存放客户端用户的公钥：/home/git/.ssh/authorized_keys </li>
+<li>按这个层级建立文件用于存放客户端用户的公钥：/home/git/.ssh/authorized_keys</li>
 </ul>
 <p>在本地客户端的git bash中通过命令：（windows先装Git客户端）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;heyiminwork@gmail.com&quot;</div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/c/Users/ymhe/.ssh/id_rsa):</div><div class="line">Created directory &apos;/c/Users/ymhe/.ssh&apos;.</div><div class="line">Enter passphrase (empty for no passphrase):</div><div class="line">Enter same passphrase again:</div><div class="line">Your identification has been saved in /c/Users/ymhe/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /c/Users/ymhe/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">SHA256:Wfx6+z6eD/Qn73vMmDugoe20otVTQjWEAxlT7+TcrWk heyiminwork@gmail.com</div><div class="line">The key&apos;s randomart image is:</div><div class="line">+---[RSA 2048]----+</div><div class="line">|        +=.o+    |</div><div class="line">|        .ooo .   |</div><div class="line">|          +.o    |</div><div class="line">|         + * . . |</div><div class="line">|        S . * o .|</div><div class="line">|         ..+.. + |</div><div class="line">|        .o=o..E=o|</div><div class="line">|       .o.o+ o===|</div><div class="line">|      .. oo .+*B*|</div><div class="line">+----[SHA256]-----+</div></pre></td></tr></table></figure>
@@ -529,7 +529,7 @@ Git 常用命令汇总">
 <li>设置username email<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;Ekimin&quot; #双引号中为用户名</div><div class="line">git config --global user.email &quot;heyiminwork@gmail.com&quot;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>这个命令，会在“~/.gitconfig”中以如下形式输出设置文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[ymhe@iZ114e8q2mjZ ~]$ cat ~/.gitconfig </div><div class="line">[user]</div><div class="line">	name = Ekimin</div><div class="line">	email = heyiminwork@gmail.com</div></pre></td></tr></table></figure></p>
+<p>这个命令，会在“~/.gitconfig”中以如下形式输出设置文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[ymhe@iZ114e8q2mjZ ~]$ cat ~/.gitconfig</div><div class="line">[user]</div><div class="line">	name = Ekimin</div><div class="line">	email = heyiminwork@gmail.com</div></pre></td></tr></table></figure></p>
 <p>想更改这些信息时，可以直接编辑这个设置文件。这里设置的姓名和邮箱地址会用在Git的提交日志中。由于在GitHub上公开仓库时，这里的姓名和邮箱地址也会随着提交日志一同被公开，所以请不要使用不便公开的隐私信息。</p>
 <ul>
 <li>提高命令的可读性</li>
@@ -587,7 +587,7 @@ Git 常用命令汇总">
 <h2 id="第一次-push-到远程仓库"><a href="#第一次-push-到远程仓库" class="headerlink" title="第一次 push 到远程仓库"></a>第一次 push 到远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">E:\IDEA\AlgoliaSearch&gt;git push --set-upstream origin master</div><div class="line">Counting objects: 4, done.</div><div class="line">Delta compression using up to 2 threads.</div><div class="line">Compressing objects: 100% (4/4), done.</div><div class="line">Writing objects: 100% (4/4), 1.14 KiB | 0 bytes/s, done.</div><div class="line">Total 4 (delta 0), reused 0 (delta 0)</div><div class="line">To github.com:Ekimin/AlgoliaSearch.git</div><div class="line"> * [new branch]      master -&gt; master</div><div class="line">Branch master set up to track remote branch master from origin.</div></pre></td></tr></table></figure>
 <h2 id="场景：在本地新建分支-dev，push到远程仓库（远程没有dev分支）"><a href="#场景：在本地新建分支-dev，push到远程仓库（远程没有dev分支）" class="headerlink" title="场景：在本地新建分支 dev，push到远程仓库（远程没有dev分支）"></a>场景：在本地新建分支 dev，push到远程仓库（远程没有dev分支）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch</div><div class="line">* master</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch dev</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch</div><div class="line">  dev</div><div class="line">* master</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git checkout dev</div><div class="line">Switched to branch &apos;dev&apos;</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git push --set-upstream origin dev</div><div class="line">Total 0 (delta 0), reused 0 (delta 0)</div><div class="line">To github.com:Ekimin/AlgoliaSearch.git</div><div class="line"> * [new branch]      dev -&gt; dev</div><div class="line">Branch dev set up to track remote branch dev from origin.</div></pre></td></tr></table></figure>
 <h2 id="删除分支-dev"><a href="#删除分支-dev" class="headerlink" title="删除分支 dev"></a>删除分支 dev</h2><ul>
-<li>删除本地分支 dev<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -d &lt;branch-name&gt; </div><div class="line">git branch -D &lt;branch-name&gt; #强制删除（分支没有merge也会被删除）</div></pre></td></tr></table></figure>
+<li>删除本地分支 dev<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -d &lt;branch-name&gt;</div><div class="line">git branch -D &lt;branch-name&gt; #强制删除（分支没有merge也会被删除）</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch</div><div class="line">* dev</div><div class="line">  master</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch -d dev</div><div class="line">error: Cannot delete branch &apos;dev&apos; checked out at &apos;E:/IDEA/AlgoliaSearch&apos;</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git checkout master</div><div class="line">Switched to branch &apos;master&apos;</div><div class="line">Your branch is up-to-date with &apos;origin/master&apos;.</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch -d dev</div><div class="line">Deleted branch dev (was 74a7280).</div><div class="line"></div><div class="line">E:\IDEA\AlgoliaSearch&gt;git branch</div><div class="line">* master</div></pre></td></tr></table></figure>
@@ -766,7 +766,7 @@ Git 常用命令汇总">
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

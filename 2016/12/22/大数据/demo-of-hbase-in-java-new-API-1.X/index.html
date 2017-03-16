@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="(¬､¬)稳妥妥(￢_￢)">
 <meta property="og:description" content="HBase 1.0版是一个稳定版本，可以用于生产环境，而对于0.98.x系列版本，HBase开发团队仍然会继续维护和开发。
 下面是一个scan表操作的Demo">
-<meta property="og:updated_time" content="2017-03-08T07:05:24.788Z">
+<meta property="og:updated_time" content="2017-03-16T06:21:47.095Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hbase新API Demo">
 <meta name="twitter:description" content="HBase 1.0版是一个稳定版本，可以用于生产环境，而对于0.98.x系列版本，HBase开发团队仍然会继续维护和开发。
@@ -453,6 +453,7 @@
         <p>HBase 1.0版是一个稳定版本，可以用于生产环境，而对于0.98.x系列版本，HBase开发团队仍然会继续维护和开发。</p>
 <p><strong>下面是一个scan表操作的Demo</strong><br><a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">	<span class="comment">// 创建一个hbase用户</span></div><div class="line">	UserGroupInformation userGroupInformation = UserGroupInformation.createRemoteUser(<span class="string">"hbase"</span>);</div><div class="line">	User user = User.create(userGroupInformation);</div><div class="line">	<span class="comment">// 创建连接</span></div><div class="line"></div><div class="line">	Connection connection = <span class="keyword">null</span>;</div><div class="line">	Table table = <span class="keyword">null</span>;</div><div class="line">	<span class="comment">//Admin admin = null;</span></div><div class="line">	<span class="keyword">try</span> &#123;</div><div class="line">		connection = ConnectionFactory.createConnection(conf, user);</div><div class="line">		table = connection.getTable(TableName.valueOf(tableName));</div><div class="line"><span class="comment">//		admin = connection.getAdmin();</span></div><div class="line"></div><div class="line">		ResultScanner resultScanner = HbaseCommons.scanTable(table);</div><div class="line">		<span class="keyword">for</span> (Result result : resultScanner) &#123;</div><div class="line">			HbaseCommons.printResult(result);</div><div class="line">		&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -607,7 +608,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

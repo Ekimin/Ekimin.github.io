@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,博客,Github," />
+  <meta name="keywords" content="Hexo,Github,博客," />
 
 
 
@@ -127,7 +127,7 @@ Hexo + VPS 搭建个人博客
 <meta property="og:image" content="http://oduq3lfcc.bkt.clouddn.com/git%E9%85%8D%E7%BD%AEsudoer%E6%9D%83%E9%99%90.png">
 <meta property="og:image" content="http://oduq3lfcc.bkt.clouddn.com/rsapub.png">
 <meta property="og:image" content="http://oduq3lfcc.bkt.clouddn.com/nginx-conf.png">
-<meta property="og:updated_time" content="2017-03-08T09:38:44.982Z">
+<meta property="og:updated_time" content="2017-03-16T06:21:42.189Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用 Hexo 搭建个人博客">
 <meta name="twitter:description" content="目录：
@@ -520,7 +520,7 @@ Hexo + VPS 搭建个人博客
 <p>例如，我的Windows电脑里面的id_rsa.pub文件存放在：<br><img src="http://oduq3lfcc.bkt.clouddn.com/rsapub.png" alt=""><br>如果你本地机器是Linux系统，那么该文件路径应该在：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/.ssh/ <span class="comment">#当前用户主目录下的.ssh文件夹中</span></div></pre></td></tr></table></figure>
 <p>如果你发现并没有id_rsa.pub文件，那么说明之前没有生成过，请参考 <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">生成SSH Key</a></p>
-<p>服务器中/home/git/.ssh/authorized_keys文件在这里：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ git]<span class="comment"># cd /home/git </span></div><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ git]<span class="comment"># ls -al</span></div><div class="line">total 24</div><div class="line">drwx------  3 git  git  4096 Nov 18 10:26 .</div><div class="line">drwxr-xr-x. 5 root root 4096 Nov 21 16:15 ..</div><div class="line">-rw-r--r--  1 git  git    18 Oct 16  2014 .bash_logout</div><div class="line">-rw-r--r--  1 git  git   176 Oct 16  2014 .bash_profile</div><div class="line">-rw-r--r--  1 git  git   124 Oct 16  2014 .bashrc</div><div class="line">drwxr-xr-x  2 root root 4096 Nov 18 10:28 .ssh</div><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ git]<span class="comment"># cd .ssh</span></div><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ .ssh]<span class="comment"># ll</span></div><div class="line">total 4</div><div class="line">-rw-r--r-- 1 root root 404 Nov 18 10:27 authorized_keys</div></pre></td></tr></table></figure></p>
+<p>服务器中/home/git/.ssh/authorized_keys文件在这里：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ git]<span class="comment"># cd /home/git</span></div><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ git]<span class="comment"># ls -al</span></div><div class="line">total 24</div><div class="line">drwx------  3 git  git  4096 Nov 18 10:26 .</div><div class="line">drwxr-xr-x. 5 root root 4096 Nov 21 16:15 ..</div><div class="line">-rw-r--r--  1 git  git    18 Oct 16  2014 .bash_logout</div><div class="line">-rw-r--r--  1 git  git   176 Oct 16  2014 .bash_profile</div><div class="line">-rw-r--r--  1 git  git   124 Oct 16  2014 .bashrc</div><div class="line">drwxr-xr-x  2 root root 4096 Nov 18 10:28 .ssh</div><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ git]<span class="comment"># cd .ssh</span></div><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ .ssh]<span class="comment"># ll</span></div><div class="line">total 4</div><div class="line">-rw-r--r-- 1 root root 404 Nov 18 10:27 authorized_keys</div></pre></td></tr></table></figure></p>
 <p>将你本机的公钥添加到上面authorized_keys就可以了，多个key换行。</p>
 <h3 id="设置-VPS-的-ssh-端口"><a href="#设置-VPS-的-ssh-端口" class="headerlink" title="设置 VPS 的 ssh 端口"></a>设置 VPS 的 ssh 端口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ hexo]<span class="comment"># vim /etc/ssh/sshd_config</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Port 22</div></pre></td></tr></table></figure>
@@ -548,7 +548,7 @@ Hexo + VPS 搭建个人博客
 <h2 id="创建博客仓库"><a href="#创建博客仓库" class="headerlink" title="创建博客仓库"></a>创建博客仓库</h2><p>此处切换到 git 用户操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ .ssh]<span class="comment"># su git</span></div></pre></td></tr></table></figure></p>
 <h3 id="创建放仓库的目录"><a href="#创建放仓库的目录" class="headerlink" title="创建放仓库的目录"></a>创建放仓库的目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ var]$ sudo mkdir /var/www/blog</div><div class="line"></div><div class="line">We trust you have received the usual lecture from the <span class="built_in">local</span> System</div><div class="line">Administrator. It usually boils down to these three things:</div><div class="line"></div><div class="line">    <span class="comment">#1) Respect the privacy of others.</span></div><div class="line">    <span class="comment">#2) Think before you type.</span></div><div class="line">    <span class="comment">#3) With great power comes great responsibility.</span></div><div class="line"></div><div class="line">[sudo] password <span class="keyword">for</span> git:</div></pre></td></tr></table></figure>
 <p>这里有提示信息，可以忽视，输入前面设置的git用户的密码完成目录创建。目录路径可以自行改变，但是要保证git用户有相应权限。</p>
-<h3 id="创建一个裸仓库-blog"><a href="#创建一个裸仓库-blog" class="headerlink" title="创建一个裸仓库 blog"></a>创建一个裸仓库 blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ blog]$ sudo git init --bare blog.git</div><div class="line">[sudo] password <span class="keyword">for</span> git: </div><div class="line">Initialized empty Git repository <span class="keyword">in</span> /var/www/blog/blog.git/</div></pre></td></tr></table></figure>
+<h3 id="创建一个裸仓库-blog"><a href="#创建一个裸仓库-blog" class="headerlink" title="创建一个裸仓库 blog"></a>创建一个裸仓库 blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ blog]$ sudo git init --bare blog.git</div><div class="line">[sudo] password <span class="keyword">for</span> git:</div><div class="line">Initialized empty Git repository <span class="keyword">in</span> /var/www/blog/blog.git/</div></pre></td></tr></table></figure>
 <p>这样就创建了一个叫 blog 的裸仓库。<br>–bare 参数是告诉 Git 创建一个裸仓库，裸仓库没有工作区，我们不会在裸仓库上进行操作，它只为共享而存在。</p>
 <h2 id="配置-git-hooks"><a href="#配置-git-hooks" class="headerlink" title="配置 git hooks"></a>配置 git hooks</h2><p>参考资料：<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90" target="_blank" rel="external">自定义 Git - Git 钩子</a></p>
 <p>我们这里要使用的是 post-receive 的 hook，这个 hook 会在整个 git 操作过程完结以后被运行。</p>
@@ -590,7 +590,7 @@ Hexo + VPS 搭建个人博客
 <li><p>安装npm hexo 本地环境</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install hexo --save <span class="comment">#安装hexo环境到本目录</span></div><div class="line">npm install <span class="comment">#安装npm 环境到本目录,该步骤不做的话可能会出现hexo generate过后缺少文件（如index页面）</span></div><div class="line">npm install hexo-deployer-git <span class="comment">#hexo通过git发布网页的插件</span></div><div class="line"></div><div class="line">npm install hexo-algolia --save <span class="comment">#使用algolia搜索的还需要安装此插件</span></div><div class="line"><span class="comment">#...其他插件安装</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>环境恢复成功，可以使用hexo g -d 发布博客了 </p>
+<li><p>环境恢复成功，可以使用hexo g -d 发布博客了</p>
 </li>
 </ul>
 
@@ -618,9 +618,9 @@ Hexo + VPS 搭建个人博客
           
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-            <a href="/tags/博客/" rel="tag"># 博客</a>
-          
             <a href="/tags/Github/" rel="tag"># Github</a>
+          
+            <a href="/tags/博客/" rel="tag"># 博客</a>
           
         </div>
       
@@ -759,7 +759,7 @@ Hexo + VPS 搭建个人博客
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
