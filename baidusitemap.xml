@@ -4,14 +4,40 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
-    <lastmod>2017-03-16T07:33:22.523Z</lastmod>
+    <loc>https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/</loc>
+    <lastmod>2017-03-16T12:53:35.998Z</lastmod>
     <data>
         <display>
-        <title>Aria2安装配置</title>
-        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
+        <title>译文 Footprints on the Blockchain:Information Leakage in Distributed Ledgers</title>
+        <pubTime>2017-03-16T12:53:35.000Z</pubTime>
         
-        <tag>Aria2</tag>
+        <tag>Academic</tag>
+         
+        <tag>区块链</tag>
+         
+        <tag>信息泄露</tag>
+         
+         
+           
+             
+              <breadCrumb title="Academic" url="https://wentuotuo.com/categories/Academic/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2017/03/15/%E5%B7%A5%E5%85%B7/atom-manual/</loc>
+    <lastmod>2017-03-16T08:28:18.838Z</lastmod>
+    <data>
+        <display>
+        <title>Atom 手册</title>
+        <pubTime>2017-03-14T16:00:00.000Z</pubTime>
+        
+        <tag>Atom</tag>
+         
+        <tag>工具</tag>
          
          
            
@@ -24,16 +50,14 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/03/15/%E5%B7%A5%E5%85%B7/atom-manual/</loc>
-    <lastmod>2017-03-16T07:32:51.371Z</lastmod>
+    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
+    <lastmod>2017-03-16T07:33:22.523Z</lastmod>
     <data>
         <display>
-        <title>Atom 手册</title>
-        <pubTime>2017-03-14T16:00:00.000Z</pubTime>
+        <title>Aria2安装配置</title>
+        <pubTime>2016-12-07T15:31:31.000Z</pubTime>
         
-        <tag>Atom</tag>
-         
-        <tag>工具</tag>
+        <tag>Aria2</tag>
          
          
            
@@ -145,9 +169,9 @@
         
         <tag>大数据</tag>
          
-        <tag>Hbase</tag>
-         
         <tag>Hive</tag>
+         
+        <tag>Hbase</tag>
          
          
            
