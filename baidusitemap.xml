@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2016/08/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/solr6-4-1-manual/</loc>
+    <lastmod>2017-03-29T05:58:19.932Z</lastmod>
+    <data>
+        <display>
+        <title>Solr 6.4.1 搭建和使用教程</title>
+        <pubTime>2016-08-22T11:22:54.000Z</pubTime>
+        
+        <tag>大数据</tag>
+         
+        <tag>Solr</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/</loc>
     <lastmod>2017-03-22T11:36:18.534Z</lastmod>
     <data>
@@ -278,28 +300,6 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/10/13/%E5%8D%9A%E5%AE%A2/hexo-blog-based-on-github/</loc>
-    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
-    <data>
-        <display>
-        <title>在github上搭建hexo博客</title>
-        <pubTime>2016-10-13T09:47:25.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wentuotuo.com/2015/12/25/Java/use-cursor-read-bigdata/</loc>
     <lastmod>2017-03-08T07:05:24.786Z</lastmod>
     <data>
@@ -315,6 +315,28 @@
            
              
               <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2016/10/13/%E5%8D%9A%E5%AE%A2/hexo-blog-based-on-github/</loc>
+    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
+    <data>
+        <display>
+        <title>在github上搭建hexo博客</title>
+        <pubTime>2016-10-13T09:47:25.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
