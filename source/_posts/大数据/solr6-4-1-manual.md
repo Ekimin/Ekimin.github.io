@@ -1,13 +1,15 @@
 ---
 title: Solr 6.4.1 搭建和使用教程
-date: 2016-08-22 19:22:54
-tags: [Solr, 大数据]
+tags:
+  - Solr
+  - 大数据
 categories: 大数据
-layout: post
+date: 2016-08-22 19:22:54
 updated:
 comments:
-permalink: 
+permalink:
 ---
+
 
 
 <!--more-->
