@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/</loc>
+    <lastmod>2017-03-30T06:01:27.992Z</lastmod>
+    <data>
+        <display>
+        <title>译文 Footprints on the Blockchain:Information Leakage in Distributed Ledgers</title>
+        <pubTime>2017-03-16T12:53:35.000Z</pubTime>
+        
+        <tag>Academic</tag>
+         
+        <tag>区块链</tag>
+         
+        <tag>信息泄露</tag>
+         
+         
+           
+             
+              <breadCrumb title="Academic" url="https://wentuotuo.com/categories/Academic/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2017/03/15/Python/encoding-trans-python/</loc>
     <lastmod>2017-03-30T05:52:22.055Z</lastmod>
     <data>
@@ -47,30 +71,6 @@
            
              
               <breadCrumb title="大数据" url="https://wentuotuo.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/</loc>
-    <lastmod>2017-03-22T11:36:18.534Z</lastmod>
-    <data>
-        <display>
-        <title>译文 Footprints on the Blockchain:Information Leakage in Distributed Ledgers</title>
-        <pubTime>2017-03-16T12:53:35.000Z</pubTime>
-        
-        <tag>Academic</tag>
-         
-        <tag>区块链</tag>
-         
-        <tag>信息泄露</tag>
-         
-         
-           
-             
-              <breadCrumb title="Academic" url="https://wentuotuo.com/categories/Academic/"/>
           
         </display>
     </data>
@@ -219,9 +219,9 @@
         
         <tag>大数据</tag>
          
-        <tag>Hive</tag>
-         
         <tag>Hbase</tag>
+         
+        <tag>Hive</tag>
          
          
            

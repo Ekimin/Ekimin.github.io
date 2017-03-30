@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wentuotuo.com/"/>
-  <updated>2017-03-22T11:36:18.534Z</updated>
+  <updated>2017-03-30T06:01:27.992Z</updated>
   <id>https://wentuotuo.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/"/>
     <id>https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/</id>
     <published>2017-03-16T12:53:35.000Z</published>
-    <updated>2017-03-22T11:36:18.534Z</updated>
+    <updated>2017-03-30T06:01:27.992Z</updated>
     
     <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><blockquote>
 <p>This paper examines information leakage in distributed ledgers. We show how the lack of time priority in the period between the publication of a transaction and its validation by miners or designated participants can expose a transaction’s “footprint” to the market, resulting in potential front-running and manipulation.</p>
@@ -30,6 +30,7 @@
 <p>We propose a cryptology-based approach for solving information leakage problems in distributed ledgers that relies on using a “hash” (or mathematical identifier) to secure time-priority followed by a second communication revealing more features of the underlying market transaction. Solving the information leakage problem greatly expands the potential applications of private distributed ledger technology.</p>
 </blockquote>
 <p>为了解决分布式账本技术中信息泄露问题，我们提出了一个基于密码学的方法。该方法通过“哈希”（或者其他数学标识符）和紧随其后的可以显示更多潜在市场交易信息的二次通讯信息来确保交易时序。信息泄露问题的解决可以增加个人分布式账本技术的潜在应用。</p>
+<a id="more"></a>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><blockquote>
 <p>Advocates of the blockchain, the distributed ledger technology that underlies Bitcoin,see an almost limitless future for the innovation. Apart from its role in cryptocurrencies,distributed ledger technologies are being developed to handle stock trades, clear and settle leveraged loans, handle catastrophe reinsurance, keep track of land titles and transactions,track the ownership of intellectual properties, facilitate peer-to-peer marketplaces – the list goes on and on. Much of the appeal of the blockchain lies in its use of a decentralized distributed ledger technology in which an immutable single record emerges of the various transactions encased in the blocks. The ability to trade assets in such a setting, along with the emergence of new “smart contracts” that can automatically trigger additional steps such as recording ownership changes or authorizing payments, can have, in the words of the Bank of England, “far-reaching implications for the financial industry”.</p>
 </blockquote>
@@ -39,7 +40,13 @@
     <summary type="html">
     
       &lt;h1 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;This paper examines information leakage in distributed le
+&lt;p&gt;This paper examines information leakage in distributed ledgers. We show how the lack of time priority in the period between the publication of a transaction and its validation by miners or designated participants can expose a transaction’s “footprint” to the market, resulting in potential front-running and manipulation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这篇文章研究了分布式账本技术中的信息泄露问题。我们演示了在交易的公布到比特币矿机或者特定参与者证实交易有效这段时间中，缺乏时序是怎样揭示出交易走向市场的“脚印”，从而导致潜在的非法预先交易和操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We propose a cryptology-based approach for solving information leakage problems in distributed ledgers that relies on using a “hash” (or mathematical identifier) to secure time-priority followed by a second communication revealing more features of the underlying market transaction. Solving the information leakage problem greatly expands the potential applications of private distributed ledger technology.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;为了解决分布式账本技术中信息泄露问题，我们提出了一个基于密码学的方法。该方法通过“哈希”（或者其他数学标识符）和紧随其后的可以显示更多潜在市场交易信息的二次通讯信息来确保交易时序。信息泄露问题的解决可以增加个人分布式账本技术的潜在应用。&lt;/p&gt;
     
     </summary>
     
@@ -508,6 +515,61 @@
   </entry>
   
   <entry>
+    <title>IntelliJ IDEA 笔记</title>
+    <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/"/>
+    <id>https://wentuotuo.com/2017/01/16/工具/IntelliJ-IDEA-tutorial/</id>
+    <published>2017-01-16T06:13:57.000Z</published>
+    <updated>2017-03-08T07:05:24.790Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文记录了IDEA的使用配置和遇到的问题，方便后面查询</p>
+<a id="more"></a>
+<h1 id="IDEA-集成SVN"><a href="#IDEA-集成SVN" class="headerlink" title="IDEA 集成SVN"></a>IDEA 集成SVN</h1><ul>
+<li>环境：</li>
+</ul>
+<p>OS：Windows 10 (64位)</p>
+<p>IDEA版本：IntelliJ IDEA 2016.3.4 Build #IU-163.12024.16, built on January 31, 2017</p>
+<ul>
+<li>下载安装</li>
+</ul>
+<p><a href="https://tortoisesvn.net/" target="_blank" rel="external">SVN官网</a>下载SVN并安装。</p>
+<p><strong>注意：安装时需要选择安装command line client tools, 默认这一项是不安装的。如果不安装，那么后面找不到svn.exe这个文件</strong></p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85.png" alt=""></p>
+<ul>
+<li>在IDEA中配置SVN</li>
+</ul>
+<p>File-settings-subversion, 勾选Use command line client，选择刚刚安装的SVN中的svn.exe。(如果在bin下找不到这个文件，返回上一步检查安装的时候是否选择安装了command line client tool)</p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" alt=""></p>
+<h1 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h1><p><strong>IDEA乱码一般以下几类，按照如下设置后基本都可以解决</strong></p>
+<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8。也可以在右下角快捷改变当前文件的编码。改变之后会提示你reload文件。</p>
+<h2 id="控制台乱码"><a href="#控制台乱码" class="headerlink" title="控制台乱码"></a>控制台乱码</h2><ul>
+<li>执行main函数时乱码</li>
+</ul>
+<p>同样是打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行</p>
+<ul>
+<li>运行tomcat等容器时乱码</li>
+</ul>
+<p>打开Run/Debug Configuration,选择你的tomcat</p>
+<p>然后在  Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
+<h2 id="如果上面不管用，可以尝试下面方法修改配置文件"><a href="#如果上面不管用，可以尝试下面方法修改配置文件" class="headerlink" title="如果上面不管用，可以尝试下面方法修改配置文件"></a>如果上面不管用，可以尝试下面方法修改配置文件</h2><p>打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8<br>然后重启IDEA，一般问题都可以解决</p>
+<h1 id="IDEA-激活"><a href="#IDEA-激活" class="headerlink" title="IDEA 激活"></a>IDEA 激活</h1><p><a href="http://idea.lanyus.com/" target="_blank" rel="external">激活服务器</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录了IDEA的使用配置和遇到的问题，方便后面查询&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+      <category term="IDEA" scheme="https://wentuotuo.com/tags/IDEA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Maven学习笔记</title>
     <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/"/>
     <id>https://wentuotuo.com/2017/01/16/工具/Maven-tutorial/</id>
@@ -593,61 +655,6 @@
     
     
       <category term="Maven" scheme="https://wentuotuo.com/tags/Maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IntelliJ IDEA 笔记</title>
-    <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/"/>
-    <id>https://wentuotuo.com/2017/01/16/工具/IntelliJ-IDEA-tutorial/</id>
-    <published>2017-01-16T06:13:57.000Z</published>
-    <updated>2017-03-08T07:05:24.790Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文记录了IDEA的使用配置和遇到的问题，方便后面查询</p>
-<a id="more"></a>
-<h1 id="IDEA-集成SVN"><a href="#IDEA-集成SVN" class="headerlink" title="IDEA 集成SVN"></a>IDEA 集成SVN</h1><ul>
-<li>环境：</li>
-</ul>
-<p>OS：Windows 10 (64位)</p>
-<p>IDEA版本：IntelliJ IDEA 2016.3.4 Build #IU-163.12024.16, built on January 31, 2017</p>
-<ul>
-<li>下载安装</li>
-</ul>
-<p><a href="https://tortoisesvn.net/" target="_blank" rel="external">SVN官网</a>下载SVN并安装。</p>
-<p><strong>注意：安装时需要选择安装command line client tools, 默认这一项是不安装的。如果不安装，那么后面找不到svn.exe这个文件</strong></p>
-<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85.png" alt=""></p>
-<ul>
-<li>在IDEA中配置SVN</li>
-</ul>
-<p>File-settings-subversion, 勾选Use command line client，选择刚刚安装的SVN中的svn.exe。(如果在bin下找不到这个文件，返回上一步检查安装的时候是否选择安装了command line client tool)</p>
-<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" alt=""></p>
-<h1 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h1><p><strong>IDEA乱码一般以下几类，按照如下设置后基本都可以解决</strong></p>
-<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8。也可以在右下角快捷改变当前文件的编码。改变之后会提示你reload文件。</p>
-<h2 id="控制台乱码"><a href="#控制台乱码" class="headerlink" title="控制台乱码"></a>控制台乱码</h2><ul>
-<li>执行main函数时乱码</li>
-</ul>
-<p>同样是打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行</p>
-<ul>
-<li>运行tomcat等容器时乱码</li>
-</ul>
-<p>打开Run/Debug Configuration,选择你的tomcat</p>
-<p>然后在  Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
-<h2 id="如果上面不管用，可以尝试下面方法修改配置文件"><a href="#如果上面不管用，可以尝试下面方法修改配置文件" class="headerlink" title="如果上面不管用，可以尝试下面方法修改配置文件"></a>如果上面不管用，可以尝试下面方法修改配置文件</h2><p>打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8<br>然后重启IDEA，一般问题都可以解决</p>
-<h1 id="IDEA-激活"><a href="#IDEA-激活" class="headerlink" title="IDEA 激活"></a>IDEA 激活</h1><p><a href="http://idea.lanyus.com/" target="_blank" rel="external">激活服务器</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录了IDEA的使用配置和遇到的问题，方便后面查询&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
-    
-      <category term="IDEA" scheme="https://wentuotuo.com/tags/IDEA/"/>
     
   </entry>
   
@@ -906,9 +913,9 @@
     
       <category term="大数据" scheme="https://wentuotuo.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
-      <category term="Hive" scheme="https://wentuotuo.com/tags/Hive/"/>
-    
       <category term="Hbase" scheme="https://wentuotuo.com/tags/Hbase/"/>
+    
+      <category term="Hive" scheme="https://wentuotuo.com/tags/Hive/"/>
     
   </entry>
   
