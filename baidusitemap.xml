@@ -4,6 +4,34 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2017/03/15/Python/encoding-trans-python/</loc>
+    <lastmod>2017-03-30T05:52:22.055Z</lastmod>
+    <data>
+        <display>
+        <title>文件编码批量转换为UTF-8</title>
+        <pubTime>2017-03-15T12:13:24.000Z</pubTime>
+        
+        <tag>编码</tag>
+         
+        <tag>乱码</tag>
+         
+        <tag>UTF-8</tag>
+         
+        <tag>Python</tag>
+         
+        <tag>GBK</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://wentuotuo.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2016/08/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/solr6-4-1-manual/</loc>
     <lastmod>2017-03-29T05:58:19.932Z</lastmod>
     <data>
@@ -191,9 +219,9 @@
         
         <tag>大数据</tag>
          
-        <tag>Hbase</tag>
-         
         <tag>Hive</tag>
+         
+        <tag>Hbase</tag>
          
          
            
@@ -285,9 +313,9 @@
         <title>IntelliJ IDEA 笔记</title>
         <pubTime>2017-01-16T06:13:57.000Z</pubTime>
         
-        <tag>IDEA</tag>
-         
         <tag>乱码</tag>
+         
+        <tag>IDEA</tag>
          
          
            

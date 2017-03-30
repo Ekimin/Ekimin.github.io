@@ -55,6 +55,51 @@
   </entry>
   
   <entry>
+    <title>文件编码批量转换为UTF-8</title>
+    <link href="https://wentuotuo.com/2017/03/15/Python/encoding-trans-python/"/>
+    <id>https://wentuotuo.com/2017/03/15/Python/encoding-trans-python/</id>
+    <published>2017-03-15T12:13:24.000Z</published>
+    <updated>2017-03-30T05:52:22.055Z</updated>
+    
+    <content type="html"><![CDATA[<p>用 Python 实现的批量转换文件编码为UTF-8</p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding:utf-8 -*-</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> os,sys</div><div class="line"><span class="keyword">import</span> chardet</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">convert</span><span class="params">( filename, in_enc = <span class="string">"GBK"</span>, out_enc=<span class="string">"UTF8"</span> )</span>:</span></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        <span class="keyword">print</span> (<span class="string">"convert "</span> + filename,)</div><div class="line">        content = open(filename,<span class="string">'rb'</span>).read()</div><div class="line">        result = chardet.detect(content)<span class="comment">#通过chardet.detect获取当前文件的编码格式串，返回类型为字典类型</span></div><div class="line">        coding = result.get(<span class="string">'encoding'</span>)<span class="comment">#获取encoding的值[编码格式]</span></div><div class="line">        <span class="keyword">if</span> coding != <span class="string">'utf-8'</span>:<span class="comment">#文件格式如果不是utf-8的时候，才进行转码</span></div><div class="line">            <span class="keyword">print</span> (<span class="string">"to utf-8!"</span>)</div><div class="line">            new_content = content.decode(in_enc).encode(out_enc)</div><div class="line">            open(filename, <span class="string">'wb'</span>).write(new_content)</div><div class="line">            <span class="keyword">print</span> (<span class="string">" done"</span>)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="keyword">print</span> (coding)</div><div class="line">    <span class="keyword">except</span> IOError <span class="keyword">as</span> e:</div><div class="line">    <span class="comment"># except:</span></div><div class="line">        <span class="keyword">print</span> (<span class="string">" error"</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">explore</span><span class="params">(dir)</span>:</span></div><div class="line">    <span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(dir):</div><div class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files:</div><div class="line">            path = os.path.join(root, file)</div><div class="line">            convert(path)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">for</span> path <span class="keyword">in</span> sys.argv[<span class="number">1</span>:]:</div><div class="line">        <span class="keyword">if</span> os.path.isfile(path):</div><div class="line">            convert(path)</div><div class="line">        <span class="keyword">elif</span> os.path.isdir(path):</div><div class="line">            explore(path)</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure>
+<p>执行该文件需要 chardet，安装chardet：</p>
+<ul>
+<li>安装pip （3.4版本及以后版本都已经默认安装了pip）<br><a href="https://pip.pypa.io/en/stable/installing/" target="_blank" rel="external">https://pip.pypa.io/en/stable/installing/</a></li>
+</ul>
+<p>Windows下需要添加pip环境变量</p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/image/python/piphome.png" alt=""></p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/image/python/pythonhone.png" alt=""></p>
+<ul>
+<li>下载 chardet</li>
+</ul>
+<p><a href="https://pypi.python.org/pypi/chardet" target="_blank" rel="external">https://pypi.python.org/pypi/chardet</a> 下载chardet-2.3.0.tar.gz (md5)</p>
+<p>解压，进入解压后的目录 python setup.py install 安装</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用 Python 实现的批量转换文件编码为UTF-8&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="https://wentuotuo.com/categories/Python/"/>
+    
+    
+      <category term="编码" scheme="https://wentuotuo.com/tags/%E7%BC%96%E7%A0%81/"/>
+    
+      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+      <category term="UTF-8" scheme="https://wentuotuo.com/tags/UTF-8/"/>
+    
+      <category term="Python" scheme="https://wentuotuo.com/tags/Python/"/>
+    
+      <category term="GBK" scheme="https://wentuotuo.com/tags/GBK/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Atom 手册</title>
     <link href="https://wentuotuo.com/2017/03/15/%E5%B7%A5%E5%85%B7/atom-manual/"/>
     <id>https://wentuotuo.com/2017/03/15/工具/atom-manual/</id>
@@ -463,61 +508,6 @@
   </entry>
   
   <entry>
-    <title>IntelliJ IDEA 笔记</title>
-    <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/"/>
-    <id>https://wentuotuo.com/2017/01/16/工具/IntelliJ-IDEA-tutorial/</id>
-    <published>2017-01-16T06:13:57.000Z</published>
-    <updated>2017-03-08T07:05:24.790Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文记录了IDEA的使用配置和遇到的问题，方便后面查询</p>
-<a id="more"></a>
-<h1 id="IDEA-集成SVN"><a href="#IDEA-集成SVN" class="headerlink" title="IDEA 集成SVN"></a>IDEA 集成SVN</h1><ul>
-<li>环境：</li>
-</ul>
-<p>OS：Windows 10 (64位)</p>
-<p>IDEA版本：IntelliJ IDEA 2016.3.4 Build #IU-163.12024.16, built on January 31, 2017</p>
-<ul>
-<li>下载安装</li>
-</ul>
-<p><a href="https://tortoisesvn.net/" target="_blank" rel="external">SVN官网</a>下载SVN并安装。</p>
-<p><strong>注意：安装时需要选择安装command line client tools, 默认这一项是不安装的。如果不安装，那么后面找不到svn.exe这个文件</strong></p>
-<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85.png" alt=""></p>
-<ul>
-<li>在IDEA中配置SVN</li>
-</ul>
-<p>File-settings-subversion, 勾选Use command line client，选择刚刚安装的SVN中的svn.exe。(如果在bin下找不到这个文件，返回上一步检查安装的时候是否选择安装了command line client tool)</p>
-<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" alt=""></p>
-<h1 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h1><p><strong>IDEA乱码一般以下几类，按照如下设置后基本都可以解决</strong></p>
-<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8。也可以在右下角快捷改变当前文件的编码。改变之后会提示你reload文件。</p>
-<h2 id="控制台乱码"><a href="#控制台乱码" class="headerlink" title="控制台乱码"></a>控制台乱码</h2><ul>
-<li>执行main函数时乱码</li>
-</ul>
-<p>同样是打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行</p>
-<ul>
-<li>运行tomcat等容器时乱码</li>
-</ul>
-<p>打开Run/Debug Configuration,选择你的tomcat</p>
-<p>然后在  Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
-<h2 id="如果上面不管用，可以尝试下面方法修改配置文件"><a href="#如果上面不管用，可以尝试下面方法修改配置文件" class="headerlink" title="如果上面不管用，可以尝试下面方法修改配置文件"></a>如果上面不管用，可以尝试下面方法修改配置文件</h2><p>打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8<br>然后重启IDEA，一般问题都可以解决</p>
-<h1 id="IDEA-激活"><a href="#IDEA-激活" class="headerlink" title="IDEA 激活"></a>IDEA 激活</h1><p><a href="http://idea.lanyus.com/" target="_blank" rel="external">激活服务器</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录了IDEA的使用配置和遇到的问题，方便后面查询&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="IDEA" scheme="https://wentuotuo.com/tags/IDEA/"/>
-    
-      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Maven学习笔记</title>
     <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/"/>
     <id>https://wentuotuo.com/2017/01/16/工具/Maven-tutorial/</id>
@@ -603,6 +593,61 @@
     
     
       <category term="Maven" scheme="https://wentuotuo.com/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IntelliJ IDEA 笔记</title>
+    <link href="https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/"/>
+    <id>https://wentuotuo.com/2017/01/16/工具/IntelliJ-IDEA-tutorial/</id>
+    <published>2017-01-16T06:13:57.000Z</published>
+    <updated>2017-03-08T07:05:24.790Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文记录了IDEA的使用配置和遇到的问题，方便后面查询</p>
+<a id="more"></a>
+<h1 id="IDEA-集成SVN"><a href="#IDEA-集成SVN" class="headerlink" title="IDEA 集成SVN"></a>IDEA 集成SVN</h1><ul>
+<li>环境：</li>
+</ul>
+<p>OS：Windows 10 (64位)</p>
+<p>IDEA版本：IntelliJ IDEA 2016.3.4 Build #IU-163.12024.16, built on January 31, 2017</p>
+<ul>
+<li>下载安装</li>
+</ul>
+<p><a href="https://tortoisesvn.net/" target="_blank" rel="external">SVN官网</a>下载SVN并安装。</p>
+<p><strong>注意：安装时需要选择安装command line client tools, 默认这一项是不安装的。如果不安装，那么后面找不到svn.exe这个文件</strong></p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85.png" alt=""></p>
+<ul>
+<li>在IDEA中配置SVN</li>
+</ul>
+<p>File-settings-subversion, 勾选Use command line client，选择刚刚安装的SVN中的svn.exe。(如果在bin下找不到这个文件，返回上一步检查安装的时候是否选择安装了command line client tool)</p>
+<p><img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" alt=""></p>
+<h1 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h1><p><strong>IDEA乱码一般以下几类，按照如下设置后基本都可以解决</strong></p>
+<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>打开File-Setting, 找到File Encodings这个选项，把encoding设置成你工程的编码即可，一般是UTF-8。也可以在右下角快捷改变当前文件的编码。改变之后会提示你reload文件。</p>
+<h2 id="控制台乱码"><a href="#控制台乱码" class="headerlink" title="控制台乱码"></a>控制台乱码</h2><ul>
+<li>执行main函数时乱码</li>
+</ul>
+<p>同样是打开setting，找到 Build,Execution,Deployment &gt; Compiler &gt; Java Compiler， 设置 Additional command line parameters选项为 -encoding utf-8，然后rebuild下，重新运行</p>
+<ul>
+<li>运行tomcat等容器时乱码</li>
+</ul>
+<p>打开Run/Debug Configuration,选择你的tomcat</p>
+<p>然后在  Server &gt; VM options 设置为 -Dfile.encoding=UTF-8 ，重启tomcat</p>
+<h2 id="如果上面不管用，可以尝试下面方法修改配置文件"><a href="#如果上面不管用，可以尝试下面方法修改配置文件" class="headerlink" title="如果上面不管用，可以尝试下面方法修改配置文件"></a>如果上面不管用，可以尝试下面方法修改配置文件</h2><p>打开IDEA安装目录找到 idea.exe.vmoptions （64位为 idea64.exe.vmoptions ）文件， 在文件末尾加上一行 -Dfile.encoding=UTF-8<br>然后重启IDEA，一般问题都可以解决</p>
+<h1 id="IDEA-激活"><a href="#IDEA-激活" class="headerlink" title="IDEA 激活"></a>IDEA 激活</h1><p><a href="http://idea.lanyus.com/" target="_blank" rel="external">激活服务器</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录了IDEA的使用配置和遇到的问题，方便后面查询&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://wentuotuo.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="乱码" scheme="https://wentuotuo.com/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+      <category term="IDEA" scheme="https://wentuotuo.com/tags/IDEA/"/>
     
   </entry>
   
@@ -861,9 +906,9 @@
     
       <category term="大数据" scheme="https://wentuotuo.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
-      <category term="Hbase" scheme="https://wentuotuo.com/tags/Hbase/"/>
-    
       <category term="Hive" scheme="https://wentuotuo.com/tags/Hive/"/>
+    
+      <category term="Hbase" scheme="https://wentuotuo.com/tags/Hbase/"/>
     
   </entry>
   
