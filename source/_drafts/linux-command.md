@@ -174,6 +174,36 @@ ps -aux | sort -k3nr | head -5
 top （然后按下P，注意大写）
 ```
 
+## 释放内存
+
+- 使用sync命令，将系统缓存区中的脏数据写入磁盘中，包括已修改的i-node、已延迟的块I/O和读写映射文件，命令如下：
+
+```bash
+[root@Cloud ~]# sync
+```
+
+- 查看释放缓存参数的配置：
+
+```bash
+[root@Cloud ~]# cat /proc/sys/vm/drop_caches
+0
+```
+
+0 代表不自动释放
+
+- 设置自动释放
+
+```bash
+[root@Cloud ~]# echo 3 > /proc/sys/vm/drop_caches
+```
+
+让配置生效（不需要重启）
+
+```bash
+[root@Cloud ~]# sysctl -p
+```
+
+
 ----
 
 # 其他
