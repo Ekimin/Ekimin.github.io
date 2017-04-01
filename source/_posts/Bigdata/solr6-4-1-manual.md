@@ -10,7 +10,7 @@ comments:
 permalink:
 ---
 
-
+Solr 6.X 已经集成Jetty，不再需要tomcat容器启动。
 
 <!--more-->
 

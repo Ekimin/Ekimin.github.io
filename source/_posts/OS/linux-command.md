@@ -1,13 +1,15 @@
 ---
 title: Linux常用命令
-date: 2015-12-05
-tags: [Linux, OS]
+tags:
+  - Linux
+  - OS
 categories: 操作系统
-layout: post
+date: 2015-12-05 11:25:05
 updated:
 comments:
 permalink:
 ---
+
 
 一些linux常用命令
 
