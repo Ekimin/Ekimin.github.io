@@ -4,11 +4,11 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/03/16/trans-footprints-on-blockchain/</loc>
-    <lastmod>2017-03-30T06:01:27.992Z</lastmod>
+    <loc>https://wentuotuo.com/2017/03/16/Academic/trans-footprints-on-blockchain/</loc>
+    <lastmod>2017-04-01T07:28:55.996Z</lastmod>
     <data>
         <display>
-        <title>译文 Footprints on the Blockchain:Information Leakage in Distributed Ledgers</title>
+        <title>译文 Footprints on the Blockchain...</title>
         <pubTime>2017-03-16T12:53:35.000Z</pubTime>
         
         <tag>Academic</tag>
@@ -56,7 +56,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/08/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/solr6-4-1-manual/</loc>
+    <loc>https://wentuotuo.com/2016/08/22/Bigdata/solr6-4-1-manual/</loc>
     <lastmod>2017-03-29T05:58:19.932Z</lastmod>
     <data>
         <display>
@@ -78,7 +78,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/03/15/%E5%B7%A5%E5%85%B7/atom-manual/</loc>
+    <loc>https://wentuotuo.com/2017/03/15/Tool/atom-manual/</loc>
     <lastmod>2017-03-16T08:28:18.838Z</lastmod>
     <data>
         <display>
@@ -100,7 +100,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/12/07/%E5%B7%A5%E5%85%B7/Aria2-tutorial/</loc>
+    <loc>https://wentuotuo.com/2016/12/07/Tool/Aria2-tutorial/</loc>
     <lastmod>2017-03-16T07:33:22.523Z</lastmod>
     <data>
         <display>
@@ -142,7 +142,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/Maven-tutorial/</loc>
+    <loc>https://wentuotuo.com/2017/01/16/Tool/Maven-tutorial/</loc>
     <lastmod>2017-03-16T06:22:33.027Z</lastmod>
     <data>
         <display>
@@ -162,16 +162,16 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/03/01/%E5%B7%A5%E5%85%B7/git-tutorial/</loc>
+    <loc>https://wentuotuo.com/2017/03/01/Tool/git-tutorial/</loc>
     <lastmod>2017-03-16T06:22:23.095Z</lastmod>
     <data>
         <display>
         <title>Git 教程</title>
         <pubTime>2017-03-01T12:13:39.000Z</pubTime>
         
-        <tag>Github</tag>
-         
         <tag>Git</tag>
+         
+        <tag>Github</tag>
          
          
            
@@ -184,7 +184,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/12/08/%E5%B7%A5%E5%85%B7/centos-ss-chrome-omega/</loc>
+    <loc>https://wentuotuo.com/2016/12/08/Tool/centos-ss-chrome-omega/</loc>
     <lastmod>2017-03-16T06:22:20.591Z</lastmod>
     <data>
         <display>
@@ -210,7 +210,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/09/25/%E5%A4%A7%E6%95%B0%E6%8D%AE/relation-between-hive-and-hbase/</loc>
+    <loc>https://wentuotuo.com/2016/09/25/Bigdata/relation-between-hive-and-hbase/</loc>
     <lastmod>2017-03-16T06:22:02.261Z</lastmod>
     <data>
         <display>
@@ -234,7 +234,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/07/06/%E5%A4%A7%E6%95%B0%E6%8D%AE/manual-of-sqoop/</loc>
+    <loc>https://wentuotuo.com/2016/07/06/Bigdata/manual-of-sqoop/</loc>
     <lastmod>2017-03-16T06:21:57.727Z</lastmod>
     <data>
         <display>
@@ -256,7 +256,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/12/22/%E5%A4%A7%E6%95%B0%E6%8D%AE/demo-of-hbase-in-java-new-API-1.X/</loc>
+    <loc>https://wentuotuo.com/2016/12/22/Bigdata/demo-of-hbase-in-java-new-API-1.X/</loc>
     <lastmod>2017-03-16T06:21:47.095Z</lastmod>
     <data>
         <display>
@@ -278,18 +278,18 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2017/02/05/%E5%8D%9A%E5%AE%A2/use-hexo-siteup-personal-blog/</loc>
+    <loc>https://wentuotuo.com/2017/02/05/blog/use-hexo-siteup-personal-blog/</loc>
     <lastmod>2017-03-16T06:21:42.189Z</lastmod>
     <data>
         <display>
         <title>用 Hexo 搭建个人博客</title>
         <pubTime>2017-02-05T03:55:13.000Z</pubTime>
         
+        <tag>Github</tag>
+         
         <tag>Hexo</tag>
          
         <tag>博客</tag>
-         
-        <tag>Github</tag>
          
          
            
@@ -306,7 +306,7 @@
     
     
   <url>
-    <loc>https://wentuotuo.com/2017/01/16/%E5%B7%A5%E5%85%B7/IntelliJ-IDEA-tutorial/</loc>
+    <loc>https://wentuotuo.com/2017/01/16/Tool/IntelliJ-IDEA-tutorial/</loc>
     <lastmod>2017-03-08T07:05:24.790Z</lastmod>
     <data>
         <display>
@@ -328,7 +328,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/10/13/%E5%8D%9A%E5%AE%A2/hexo-blog-based-on-github/</loc>
+    <loc>https://wentuotuo.com/2016/10/13/blog/hexo-blog-based-on-github/</loc>
     <lastmod>2017-03-08T07:05:24.786Z</lastmod>
     <data>
         <display>
@@ -442,7 +442,7 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2016/07/29/%E5%A4%A7%E6%95%B0%E6%8D%AE/tool-unit-of-hbase/</loc>
+    <loc>https://wentuotuo.com/2016/07/29/Bigdata/tool-unit-of-hbase/</loc>
     <lastmod>2016-07-29T09:28:33.000Z</lastmod>
     <data>
         <display>
