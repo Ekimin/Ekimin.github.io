@@ -181,6 +181,28 @@ Port 22
 
 ### 安装 Nginx
 
+更新yum仓库
+```bash
+yum -y update
+```
+
+### 安装依赖
+```bash
+yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5 krb5-devel libidn libidn-devel openssl openssl-devel openldap openldap-devel nss_ldap openldap-clients openldap-servers
+```
+
+### 安装php和mysql
+
+```bash
+yum -y install php mysql mysql-server mysql-devel php-mysql php-cgi php-mbstring php-gd php-fastcgi
+```
+
+### 由于centos没有默认的nginx软件包，需要启用附件包
+
+```bash
+rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
+```
+
 ```bash
 [root@iZj6c2vq0s1w6wkap2geanZ nginx]# yum install nginx
 ```
@@ -320,11 +342,11 @@ cp -rf ${TMP_GIT_CLONE}/* ${PUBLIC_WWW}
 [git@iZj6c2vq0s1w6wkap2geanZ blog]$ sudo chown -R git:git blog.git
 ```
 
-### 改变 hexo 目录拥有者为 git 用户
+### 改变 blog 目录拥有者为 git 用户
 
 ```bash
 [git@iZj6c2vq0s1w6wkap2geanZ ~]$ cd /var/www/
-[git@iZj6c2vq0s1w6wkap2geanZ www]$ sudo chown -R git:git hexo
+[git@iZj6c2vq0s1w6wkap2geanZ www]$ sudo chown -R git:git blog
 ```
 
 ### 禁止 git 用户登录 shell
