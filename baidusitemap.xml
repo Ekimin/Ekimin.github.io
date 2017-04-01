@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>https://wentuotuo.com/2017/02/05/blog/use-hexo-siteup-personal-blog/</loc>
+    <lastmod>2017-04-01T09:26:49.561Z</lastmod>
+    <data>
+        <display>
+        <title>用 Hexo 搭建个人博客</title>
+        <pubTime>2017-02-05T03:55:13.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>博客</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2015/12/05/OS/linux-command/</loc>
+    <lastmod>2017-04-01T08:08:39.881Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用命令</title>
+        <pubTime>2015-12-05T03:25:05.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>OS</tag>
+         
+         
+           
+             
+              <breadCrumb title="操作系统" url="https://wentuotuo.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wentuotuo.com/2016/08/22/Bigdata/solr6-4-1-manual/</loc>
     <lastmod>2017-04-01T08:03:25.464Z</lastmod>
     <data>
@@ -277,30 +323,6 @@
     </url>
 
     
-  <url>
-    <loc>https://wentuotuo.com/2017/02/05/blog/use-hexo-siteup-personal-blog/</loc>
-    <lastmod>2017-03-16T06:21:42.189Z</lastmod>
-    <data>
-        <display>
-        <title>用 Hexo 搭建个人博客</title>
-        <pubTime>2017-02-05T03:55:13.000Z</pubTime>
-        
-        <tag>Github</tag>
-         
-        <tag>Hexo</tag>
-         
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
     
@@ -328,28 +350,6 @@
 
     
   <url>
-    <loc>https://wentuotuo.com/2015/12/25/Java/use-cursor-read-bigdata/</loc>
-    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
-    <data>
-        <display>
-        <title>JDBC使用游标分页读取大量数据</title>
-        <pubTime>2015-12-24T16:00:00.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>数据库</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wentuotuo.com/2016/10/13/blog/hexo-blog-based-on-github/</loc>
     <lastmod>2017-03-08T07:05:24.786Z</lastmod>
     <data>
@@ -365,6 +365,28 @@
            
              
               <breadCrumb title="博客" url="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wentuotuo.com/2015/12/25/Java/use-cursor-read-bigdata/</loc>
+    <lastmod>2017-03-08T07:05:24.786Z</lastmod>
+    <data>
+        <display>
+        <title>JDBC使用游标分页读取大量数据</title>
+        <pubTime>2015-12-24T16:00:00.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wentuotuo.com/categories/Java/"/>
           
         </display>
     </data>

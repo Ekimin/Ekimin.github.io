@@ -402,7 +402,7 @@
     <link href="https://wentuotuo.com/2017/02/05/blog/use-hexo-siteup-personal-blog/"/>
     <id>https://wentuotuo.com/2017/02/05/blog/use-hexo-siteup-personal-blog/</id>
     <published>2017-02-05T03:55:13.000Z</published>
-    <updated>2017-03-16T06:21:42.189Z</updated>
+    <updated>2017-04-01T09:26:49.561Z</updated>
     
     <content type="html"><![CDATA[<p>目录：</p>
 <ul>
@@ -457,7 +457,11 @@
 <p>将你本机的公钥添加到上面authorized_keys就可以了，多个key换行。</p>
 <h3 id="设置-VPS-的-ssh-端口"><a href="#设置-VPS-的-ssh-端口" class="headerlink" title="设置 VPS 的 ssh 端口"></a>设置 VPS 的 ssh 端口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ hexo]<span class="comment"># vim /etc/ssh/sshd_config</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Port 22</div></pre></td></tr></table></figure>
-<h2 id="安装配置-Nginx"><a href="#安装配置-Nginx" class="headerlink" title="安装配置 Nginx"></a>安装配置 Nginx</h2><h3 id="安装-Nginx"><a href="#安装-Nginx" class="headerlink" title="安装 Nginx"></a>安装 Nginx</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ nginx]<span class="comment"># yum install nginx</span></div></pre></td></tr></table></figure>
+<h2 id="安装配置-Nginx"><a href="#安装配置-Nginx" class="headerlink" title="安装配置 Nginx"></a>安装配置 Nginx</h2><h3 id="安装-Nginx"><a href="#安装-Nginx" class="headerlink" title="安装 Nginx"></a>安装 Nginx</h3><p>更新yum仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y update</div></pre></td></tr></table></figure></p>
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5 krb5-devel libidn libidn-devel openssl openssl-devel openldap openldap-devel nss_ldap openldap-clients openldap-servers</div></pre></td></tr></table></figure>
+<h3 id="安装php和mysql"><a href="#安装php和mysql" class="headerlink" title="安装php和mysql"></a>安装php和mysql</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install php mysql mysql-server mysql-devel php-mysql php-cgi php-mbstring php-gd php-fastcgi</div></pre></td></tr></table></figure>
+<h3 id="由于centos没有默认的nginx软件包，需要启用附件包"><a href="#由于centos没有默认的nginx软件包，需要启用附件包" class="headerlink" title="由于centos没有默认的nginx软件包，需要启用附件包"></a>由于centos没有默认的nginx软件包，需要启用附件包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@iZj6c2vq0s1w6wkap2geanZ nginx]<span class="comment"># yum install nginx</span></div></pre></td></tr></table></figure>
 <h3 id="配置-Nginx"><a href="#配置-Nginx" class="headerlink" title="配置 Nginx"></a>配置 Nginx</h3><ul>
 <li>删除nginx虚拟主机配置文件</li>
 </ul>
@@ -498,7 +502,7 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ sudo chmod +x post-receive</div></pre></td></tr></table></figure>
 <h2 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h2><h3 id="改变-blog-git-拥有者为-git-用户"><a href="#改变-blog-git-拥有者为-git-用户" class="headerlink" title="改变 blog.git 拥有者为 git 用户"></a>改变 blog.git 拥有者为 git 用户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ hooks]$ <span class="built_in">cd</span> /var/www/blog/</div><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ blog]$ sudo chown -R git:git blog.git</div></pre></td></tr></table></figure>
-<h3 id="改变-hexo-目录拥有者为-git-用户"><a href="#改变-hexo-目录拥有者为-git-用户" class="headerlink" title="改变 hexo 目录拥有者为 git 用户"></a>改变 hexo 目录拥有者为 git 用户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ ~]$ <span class="built_in">cd</span> /var/www/</div><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ www]$ sudo chown -R git:git hexo</div></pre></td></tr></table></figure>
+<h3 id="改变-blog-目录拥有者为-git-用户"><a href="#改变-blog-目录拥有者为-git-用户" class="headerlink" title="改变 blog 目录拥有者为 git 用户"></a>改变 blog 目录拥有者为 git 用户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ ~]$ <span class="built_in">cd</span> /var/www/</div><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ www]$ sudo chown -R git:git blog</div></pre></td></tr></table></figure>
 <h3 id="禁止-git-用户登录-shell"><a href="#禁止-git-用户登录-shell" class="headerlink" title="禁止 git 用户登录 shell"></a>禁止 git 用户登录 shell</h3><p>为了安全考虑，在配置好上面信息以后，禁止git用户登录shell。</p>
 <p>cat /etc/passwd 查看系统用户信息，找到git用户哪一行。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[git@iZj6c2vq0s1w6wkap2geanZ blog]$ cat /etc/passwd</div></pre></td></tr></table></figure></p>
 <p>比如我的机器上是：<br>git:x:500:500::/home/git:/bin/bash</p>
@@ -544,11 +548,11 @@
       <category term="博客" scheme="https://wentuotuo.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="Github" scheme="https://wentuotuo.com/tags/Github/"/>
-    
       <category term="Hexo" scheme="https://wentuotuo.com/tags/Hexo/"/>
     
       <category term="博客" scheme="https://wentuotuo.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Github" scheme="https://wentuotuo.com/tags/Github/"/>
     
   </entry>
   
