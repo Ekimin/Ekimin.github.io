@@ -16,6 +16,8 @@ permalink:
 
 用 Python 实现的批量转换文件编码为UTF-8
 
+环境：Python 3
+
 <!--more-->
 
 ```python
