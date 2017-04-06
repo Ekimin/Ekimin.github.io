@@ -10,7 +10,9 @@ categories: Java
 环境
 Linux版本：CentOS 6.5、Ubuntu 12.04.5
 JDK版本：JDK 1.7
+
 <!--more-->
+
 ------
 
 首先卸载自带openjdk，Ubuntu：
