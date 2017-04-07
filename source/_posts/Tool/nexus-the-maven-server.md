@@ -18,13 +18,13 @@ JDK 1.8.121
 
 <!--more-->
 
-## 安装jdk
+# 安装jdk
 
-如果没有jdk，需要安装jdk。
+如果没有jdk，需要安装jdk。 参考：[安装JDK](http://wentuotuo.com/2016/01/14/Java/JDK-install/)
 nexus 2.x 版本需要jdk1.7
 nexus 3.x 版本需要jdk1.8
 
-## 安装nexus
+# 安装nexus
 
 - 下载nexus： https://www.sonatype.com/download-oss-sonatype
 
@@ -53,16 +53,23 @@ Starting nexus
 
 ![](http://oduq3lfcc.bkt.clouddn.com/image/nexuui.png)
 
-## 进阶设定
+# 进阶设定
 
-### 修改管理员用户密码
+## 修改管理员用户密码
 
 默认管理员用户名/密码为 admin/admin123, 修改密码：登录UI界面，点击用户设置，修改密码。
 
-### nexus 虚拟机设定
+## 重置管理员密码
+
+http://blog.csdn.net/tianya6607/article/details/53305620
+
+## nexus 虚拟机设定
 
 ./bin/nexus.vmoptions 文件设定了nexus虚拟机参数，包括运行最大最小内存等等。默认内存是1200M，一般个人用不到这么多，果断调到500
 
+## 上传第三方 jar
+
+http://www.cnblogs.com/flowerbirds/p/6262580.html
 
 # 常用命令
 
