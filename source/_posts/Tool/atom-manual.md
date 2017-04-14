@@ -11,11 +11,13 @@ permalink:
 ---
 
 
-Atom 手册
+Atom 是 GitHub 打造的现代编辑器，速度快，跨平台，支持各种插件以及可以异常方便地自定义扩展。
+
+下载地址：https://atom.io/
 
 <!--more-->
 
-输入apm查看是否安装了Atom Package Manager.
+输入apm查看是否安装了 Atom Package Manager.
 
 ```bash
 C:\Users\ymhe>apm
