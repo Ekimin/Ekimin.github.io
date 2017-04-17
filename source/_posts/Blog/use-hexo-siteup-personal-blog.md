@@ -71,6 +71,21 @@ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum install nodejs
 ```
 
+- mac 和windows 都可以直接下载安装，非常方便
+
+mac安装完后需要配置一下环境变量，下面是安装过后的提示信息
+```bash
+Node.js was installed at
+
+   /usr/local/bin/node
+
+npm was installed at
+
+   /usr/local/bin/npm
+
+Make sure that /usr/local/bin is in your $PATH.
+```
+
 ## 安装 hexo
 
 ```bash

@@ -10,7 +10,7 @@ permalink:
 ---
 
 
-Linux的目录结构，方便规划。
+Linux的目录结构，方便规划设计。
 
 <!--more-->
 
