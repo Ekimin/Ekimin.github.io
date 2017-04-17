@@ -69,7 +69,7 @@ http://blog.csdn.net/tianya6607/article/details/53305620
 
 ## 上传第三方 jar
 
-http://www.cnblogs.com/flowerbirds/p/6262580.html
+http://blog.csdn.net/wang465745776/article/details/52527905
 
 # 常用命令
 
