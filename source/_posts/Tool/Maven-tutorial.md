@@ -96,7 +96,7 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
     </repositories>
 ```
 
-**当 Maven 需要某个插件或者jar包时，总是按照 本地仓库 -> 远程仓库 -> 中央仓库的顺序去寻找。并且从远程和中央仓库下载的插件会保存在本地，下次引用的时候就不需要重新下载了。**
+**当 Maven 需要某个插件或者jar包时，总是按照 本地仓库 -> 远程仓库 -> 中央仓库的顺序去寻找。并且从远程和中央仓库下载的依赖会保存在本地，下次引用的时候就不需要重新下载了。**
 
 ## pom.xml
 ```xml
@@ -178,6 +178,15 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
               		</configuration>            		
               	</execution>            	
               </executions>
+          </plugin>
+          <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
           </plugin>
       </plugins>
       <!-- 定义资源文件夹 -->

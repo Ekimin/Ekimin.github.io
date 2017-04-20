@@ -74,3 +74,7 @@ http://blog.csdn.net/wang465745776/article/details/52527905
 # 常用命令
 
 - /usr/local/nexus/nexus/bin/nexus {start|stop|run|run-redirect|status|restart|force-reload}
+
+# 参考资料
+
+http://www.cnblogs.com/kevingrace/p/6201984.html
