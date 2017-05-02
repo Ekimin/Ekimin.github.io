@@ -1,13 +1,18 @@
 ---
 title: HttpClient中gzip压缩导致post请求数据返回的数据乱码问题
-date: 
-tags: [爬虫, Java, 乱码, Gzip, Httpclient]
+tags:
+  - 爬虫
+  - Java
+  - 乱码
+  - Gzip
+  - Httpclient
 categories: Java
-layout: post
-updated: 
-comments: 
-permalink: 
+date: 2017-05-02 17:22:45
+updated:
+comments:
+permalink:
 ---
+
 
 解决了gzip压缩的网页返回数据引起的乱码问题。
 
