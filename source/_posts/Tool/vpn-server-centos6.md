@@ -99,7 +99,7 @@ $ sudo vim /etc/ppp/options.pptpd
 #ms-dns 10.0.0.2  
 ```
 
-- 配置后结果如下:
+- 配置后结果如下: （谷歌的dns，一直好评）
 ```
 ms-dns 8.8.8.8  
 ms-dns 8.8.4.4  

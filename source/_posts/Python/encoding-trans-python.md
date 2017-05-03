@@ -16,6 +16,8 @@ permalink:
 
 用 Python 实现的批量转换文件编码为UTF-8
 
+# Python 3 版本
+
 环境：Python 3
 
 <!--more-->
@@ -61,12 +63,17 @@ if __name__ == "__main__":
     main()
 ```
 
+# Python 2 版本
+
+
+# 其他问题
+
 执行该文件需要 chardet，安装chardet：
 
 - 安装pip （3.4版本及以后版本都已经默认安装了pip）
 https://pip.pypa.io/en/stable/installing/
 
-Windows下需要添加pip环境变量
+Windows下需要添加pip环境变量（如果不配置环境变量则需要全路径使用pip命令）
 
 ![](http://oduq3lfcc.bkt.clouddn.com/image/python/piphome.png)
 
@@ -77,3 +84,5 @@ Windows下需要添加pip环境变量
 https://pypi.python.org/pypi/chardet 下载chardet-2.3.0.tar.gz (md5)
 
 解压，进入解压后的目录 python setup.py install 安装
+
+

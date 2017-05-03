@@ -10,7 +10,7 @@ comments:
 permalink:
 ---
 
-**本文介绍并记录了hexo博客的搭建过程**
+**本文介绍并记录了在 github 上 搭建 hexo博客的过程**
 
 <!--more-->
 

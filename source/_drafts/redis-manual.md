@@ -1,14 +1,15 @@
 ---
-title:
+title: Redis 手册
 date:
-tags:
-categories:
-layout:
+tags: [Redis]
+categories: 数据库
+layout: post
 updated:
 comments:
 permalink:
 ---
 
+Redis 常用操作
 
 <!--more-->
 
@@ -65,3 +66,4 @@ $ make
 
 # Jedis
 
+Jedis 提供了一组 Java API 方法操作 Redis。

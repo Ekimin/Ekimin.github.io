@@ -82,7 +82,7 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
 ```xml
 <localRepository>E:\Config\Maven\repository</localRepository>
 ```
-例如上面，我在我用户目录下的 m2\setting.xml 文件中设置了本地仓库地址
+例如上面，我在我用户目录下的 .m2\setting.xml 文件中设置了本地仓库地址
 
 ### 远程资源库
 ```xml

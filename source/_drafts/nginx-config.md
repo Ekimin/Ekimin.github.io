@@ -1,15 +1,17 @@
 ---
-title:
+title: nginx 配置
 date:
-tags:
-categories:
-layout:
-updated:
-comments:
-permalink:
+tags: [Nginx]
+categories: 工具
+layout: post
+updated: 
+comments: 
+permalink: 
 ---
 
-Nginx Config
+Nginx Configuration. 
+本文教程主要来自官网英文教程，翻译过程中出现的语言问题请指正。
+
 
 <!--more-->
 

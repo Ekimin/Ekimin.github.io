@@ -5,6 +5,8 @@ tags: [大数据, Sqoop]
 categories: 大数据
 ---
 
+抽数要注意所用的用户是否有权限，这里使用的是hdfs用户。
+
 ## 从Oracle抽数到Hbase
 
 ```Shell

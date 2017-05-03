@@ -20,6 +20,7 @@ UUID由以下几部分的组成：当前日期和时间(UUID的第一个部分�
 <!--more-->
 
 # 生成UUID
+
 生成UUID的java实现非常简单：
 ```java
 import java.util.UUID;

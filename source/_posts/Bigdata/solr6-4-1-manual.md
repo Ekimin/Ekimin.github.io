@@ -161,6 +161,7 @@ solr option [参数]
 ![](http://oduq3lfcc.bkt.clouddn.com/image/solr/dataimport.png)
 
 # Error
+
 ## SolrCore Initialization Failures
 - org.apache.solr.common.SolrException:org.apache.solr.common.SolrException: Error loading class 'org.apache.solr.handler.dataimport.DataImportHandler'
 

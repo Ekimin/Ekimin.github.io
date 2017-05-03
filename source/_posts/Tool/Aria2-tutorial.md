@@ -181,7 +181,7 @@ desktop aria2 # aria2c --conf-path /etc/software/aria2/aria2.conf
 * aria2.conf
 * aria2.session
 * Aria2.log
-* HideRun.vbs
+* HideRun.vbs（启动aria2的vb脚本文件，不用此文件也是可以通过命令行启动的）
 
 同样修改配置文件conf，指定好下载目录，session文件和log文件的地址
 
