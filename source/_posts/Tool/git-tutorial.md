@@ -298,6 +298,27 @@ To git@github.com:Ekimin/hello-world.git
 
 # Git 常用命令汇总
 
+## 用户信息配置
+```git
+git config --global user.name "Ekimin"
+git config --global user.email Ekimin@example.com
+```
+
+如果用了 --global 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 --global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。
+
+## 查看配置
+
+```git
+git config --list
+```
+
+有时候会看到重复的变量名，那就说明它们来自不同的配置文件（比如 /etc/gitconfig 和 ~/.gitconfig），不过最终 Git 实际采用的是最后一个。
+
+```git
+$ git config user.name
+ymhe
+```
+
 ## 初始化 git init
 
 ```git
