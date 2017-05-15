@@ -325,6 +325,21 @@ ymhe
 git init [-q | --quiet] [--bare] [--template=<template-directory>] [--shared[=<permissions>]] [<directory>]
 ```
 
+## 查看变化 git diff
+
+```git
+git diff
+```
+
+比较的是工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化内容。
+
+```git
+git diff --cached
+git diff --staged
+```
+若要看已经暂存起来的文件和上次提交时的快照之间的差异，可以用 git diff --cached 命令。（Git 1.6.1 及更高版本还允许使用 git diff --staged，效果是相同的，但更好记些
+
+
 - 在当前目录初始化一个仓库
 ```git
 E:\IDEA\AlgoliaSearch>git init
@@ -458,6 +473,14 @@ To github.com:Ekimin/AlgoliaSearch.git
 E:\IDEA\AlgoliaSearch>git remote -v
 origin  git@github.com:Ekimin/AlgoliaSearch.git (fetch)
 origin  git@github.com:Ekimin/AlgoliaSearch.git (push)
+```
+
+## 查看提交历史
+
+```git
+git log
+git log -p -2   #-p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：
+git log --pretty=oneline  #单行显示
 ```
 
 ----
