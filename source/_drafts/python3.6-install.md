@@ -1,9 +1,9 @@
 ---
-title: 
+title: python 环境安装
 date: 
-tags: 
-categories: 
-layout: 
+tags: [Python]
+categories: Python
+layout: post
 updated: 
 comments: 
 permalink: 
