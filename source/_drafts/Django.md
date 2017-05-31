@@ -34,6 +34,7 @@ django-admin用法如下：
 django-admin <command> [options]
 
 命令包括：
+
 ```text
 [django]
     check
