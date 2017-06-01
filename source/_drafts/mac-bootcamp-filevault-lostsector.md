@@ -10,9 +10,10 @@ permalink:
 ---
 
 今天在用bootcamp在mac上安装win时发生了错误，分出去的空间丢失了，几经折腾最后终于找回了磁盘空间，在这里记录下过程。
+
 <!--more-->
 
-使用diskutil list：
+使用diskutil list可以看到磁盘一部分空间不见了：
 ```bash
 EkimindeMacBook-Pro:~ ekimin$ diskutil list
 /dev/disk0 (internal):
@@ -30,7 +31,7 @@ EkimindeMacBook-Pro:~ ekimin$ diskutil list
                                  Unlocked Encrypted
 ```
 
-可以看到，整个硬盘是250G，mac占121G，剩下的空间不见了- -
+整个硬盘是250G，mac占121G，剩下的空间不见了- -
 
 各种搜索，网上普遍的方案有以下几种：
 
@@ -40,6 +41,7 @@ EkimindeMacBook-Pro:~ ekimin$ diskutil list
 很不辛，上两种方法都没有解决，最后在威锋网中看到一个网友的解决方法，原来是filefault在搞怪：http://bbs.feng.com/read-htm-tid-10628217.html
 
 关掉filevault重启后，丢失的空间又出现了。可以看到，120G恢复成了250G了。
+
 ```bash
 EkimindeMacBook-Pro:~ ekimin$ diskutil list
 /dev/disk0 (internal):
@@ -57,5 +59,4 @@ EkimindeMacBook-Pro:~ ekimin$ diskutil list
                                  Unencrypted
 ```
 
-
-
+总结：初步分析，出现这种情况，可能是filevault对新分区加密了，原来磁盘并不能读到新分区的信息。
