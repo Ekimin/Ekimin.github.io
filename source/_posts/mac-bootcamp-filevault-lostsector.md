@@ -1,15 +1,19 @@
 ---
 title: Mac中用BC分区安装多系统失败导致磁盘空间丢失
-date: 
-tags: [Mac, Filevault, Bootcamp]
+tags:
+  - Mac
+  - Filevault
+  - Bootcamp
 categories: Mac
-layout: post
-updated: 
-comments: 
-permalink: 
+date: 2017-06-02 09:09:42
+updated:
+comments:
+permalink:
 ---
 
+
 今天在用bootcamp在mac上安装win时发生了错误，分出去的空间丢失了，几经折腾最后终于找回了磁盘空间，在这里记录下过程。
+
 <!--more-->
 
 使用diskutil list：
