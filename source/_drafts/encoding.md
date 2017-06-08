@@ -1,15 +1,15 @@
 ---
 title: 字符编码
-date: 
+date:
 tags: [编码]
-categories: 
+categories:
 layout: post
-updated: 
-comments: 
-permalink: 
+updated:
+comments:
+permalink:
 ---
 
-
+字符编码介绍。
 
 <!--more-->
 
