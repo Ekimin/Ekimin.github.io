@@ -1,9 +1,9 @@
 ---
-title: 
+title: 字符编码
 date: 
-tags: 
+tags: [编码]
 categories: 
-layout: 
+layout: post
 updated: 
 comments: 
 permalink: 
