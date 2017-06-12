@@ -1,13 +1,16 @@
 ---
 title: Solrcloud 原理
-date: 
-tags: [Solr, Solrcloud, 大数据]
+tags:
+  - Solr
+  - Solrcloud
+  - 大数据
 categories: 大数据
-layout: post
-updated: 
-comments: 
-permalink: 
+date: 2017-06-06 17:28:00
+updated:
+comments:
+permalink:
 ---
+
 
 SolrCloud是Solr4.0版本以后基于Solr和Zookeeper的分布式搜索方案。SolrCloud是Solr的基于Zookeeper一种部署方式。Solr可以以多种方式部署，例如单机方式，多机Master-Slaver方式。
 
