@@ -186,6 +186,10 @@ pom.xml 见最下面。主要关注<build>节点中exec插件的配置。
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <!-- 指定外部引用jar包路径（不包含子目录） -->
+                    <compilerArguments>
+                        <extdirs>${WORKSPACE}\WebContent\WEB-INF\lib</extdirs>
+          			</compilerArguments>
                 </configuration>
           </plugin>
       </plugins>
