@@ -9,4 +9,3 @@ workspace.xml
 .idea/
 /.deploy_git
 *.iml
-/package.json
