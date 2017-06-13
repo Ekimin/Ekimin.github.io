@@ -71,7 +71,20 @@ http://blog.csdn.net/tianya6607/article/details/53305620
 
 http://blog.csdn.net/wang465745776/article/details/52527905
 
-
+```bash
+C:\Users\ymhe>mvn deploy:deploy-file -DgroupId=com.software -DartifactId=artid -Dversion=1.1.1 -Dpackaging=jar -Dfile=
+F:\artid-1.1.1.jar -Durl=http://XXXXX.com:8081/xxxx/maven-thirdparty/ -DrepositoryId=nexus
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO]
+...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+```
 
 # 常用命令
 
