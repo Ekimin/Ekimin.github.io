@@ -215,7 +215,7 @@ UserScript: [XuanFengEx](https://greasyfork.org/scripts/354-xuanfengex)
 UserScript: [LixianExporter](https://greasyfork.org/scripts/2398-lixianexporter)
 ## 百度网盘
 Chrome Extension: [BaiduExporter](https://chrome.google.com/webstore/detail/mjaenbjdjmgolhoafkohbhhbaiedbkno)
-目前百度网盘助手作者已经不更新了，但是可以使用以前版本是chrome插件: https://pan.baidu.com/s/1bo3bWzt 密码: 6vgp
+目前百度网盘助手作者已经不更新了，但是可以使用以前版本是chrome插件:https://pan.baidu.com/s/1qYVYWoc 密码:rxt9
 
 Firefox Addons: [BaiduExporter](https://github.com/acgotaku/BaiduExporter)
 UserScript: [BaiduPanDownloadHelper](https://greasyfork.org/scripts/294-baidupandownloadhelper)
