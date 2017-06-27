@@ -2,7 +2,7 @@
 title: 字符编码
 date:
 tags: [编码]
-categories:
+categories: 
 layout: post
 updated:
 comments:
