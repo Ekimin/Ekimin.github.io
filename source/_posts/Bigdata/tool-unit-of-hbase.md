@@ -343,3 +343,7 @@ public class HbaseCommons {
 	}
 }
 ```
+
+# Hbase shell 命令
+
+http://www.cnblogs.com/hunttown/p/5799850.html
