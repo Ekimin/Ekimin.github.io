@@ -1,13 +1,14 @@
 ---
 title: 字符编码
-date:
-tags: [编码]
-categories: 
-layout: post
+tags:
+  - 编码
+categories: 杂谈
+date: 2017-06-29 16:20:32
 updated:
 comments:
 permalink:
 ---
+
 
 字符编码介绍。
 
