@@ -1,13 +1,15 @@
 ---
-title: mysql 手册
-date: 
-tags: [Mysql, 数据库]
+title: mysql 错误汇总
+tags:
+  - Mysql
+  - 数据库
 categories: 数据库
-layout: post
-updated: 
-comments: 
-permalink: 
+date: 2017-05-20 17:33:29
+updated:
+comments:
+permalink:
 ---
+
 
 mysql 错误汇总
 
