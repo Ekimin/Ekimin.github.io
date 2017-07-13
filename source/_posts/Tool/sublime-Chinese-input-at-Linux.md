@@ -15,13 +15,13 @@ permalink:
 
 <!--more-->
 
-1. SublimeText 3的安装
+- 1.SublimeText 3的安装
     安装方式有多种，本文所描述的是从官方网站上下载64位的.deb文件 ，具体为http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_amd64.deb 文件，下载后双击即会自动使用默认的安装软件安装。
 
-2. 相关依赖软件的安装
+- 2.相关依赖软件的安装
     sudo apt-get install build-essential libgtk2.0-dev
 
-3. 拷贝如下代码到文件sublime_imfix.c文件中，该文件需要自己创建，随便放到那里都行。
+- 3.拷贝如下代码到文件sublime_imfix.c文件中，该文件需要自己创建，随便放到那里都行。
 ```doc
 /*
  * sublime-imfix.c
@@ -122,14 +122,14 @@ gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags 
 ```
 最后在当前目录下得到libsublime-imfix.so这个共享库。
 
-4. 中文输入
+- 4.中文输入
     到这里默认已经装好了中文输入法（搜狗输入法linux版）。得到第3步中的库libsublime-imfix.so之后，先试试看是否能正常使用中文输入法，在终端中输入如下命令：
 ```shell
 LD_PRELOAD=./libsublime-imfix.so subl             #subl是安装好SublimeText 3后的程序启动命令
 ```
 如果一切正常，在启动之后，搜狗输入法就能可以输入了。
 
-5. 为了方便
+- 5.为了方便
     在第4步中如果每次都输入LD_PRELOAD这样显得太不方便了，在这里提供简单修改图标连接的方式，快速打开SublimeText。将libsublime-imfix.so拷贝到系统库的默认路径中：
 ```shell
     sudo cp libsublime-imfix.so /usr/lib/
