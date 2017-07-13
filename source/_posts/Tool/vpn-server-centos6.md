@@ -115,13 +115,34 @@ vim /etc/ppp/chap-secrets
 ```
 # Secrets for authentication using CHAP  
 # client    server  secret          IP addresses  
-ymhe   pptpd   123456       *  
+wentuotuo   pptpd   123456       *  
 ```
 
+- 配置pptp
+
+```bash
+vim /etc/pptpd.conf
+```
+
+打开配置文件后，在最下面找到
+
+```bash
+#localip 192.168.0.1
+#remoteip 192.168.0.234-238,192.168.0.245
+```
+
+去掉注释，并改成你自己想要设置的IP段
+
+localip就是指定你服务器的内网IP地址，其实即便网卡没有配置成这个地址也无所谓
+remoteip就是用户连接到你的服务器后，服务器为用户分配的ip地址范围，注意格式。
+```bash
+localip 10.163.220.120
+remoteip 10.163.220.121-245
+```
 
 - iptables 配置
 
-- 清空防火墙配置
+- 清空防火墙配置(如果你的服务器有其他防火墙规则配置正在生效，那么不要进行这一步)
 ```
 $ sudo iptables -P INPUT ACCEPT #改成 ACCEPT 表示接收一切请求  
 $ sudo iptables -F #清空默认所有规则  
@@ -134,6 +155,7 @@ $ sudo iptables -A INPUT -i lo -j ACCEPT #允许127.0.0.1访问本地服务
 $ sudo iptables -A INPUT -m state --state ESTABLISHED -j ACCEPT #允许访问外部服务  
 $ sudo iptables -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT #允许 ping  
 $ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT #开启 ssh 端口,若需要配置其他端口,比如 80 3306 8080 参考 ssh 端口配置方式
+$ sudo iptables -t nat -A POSTROUTING -s 10.163.220.0/24 -j SNAT --to-source 115.29.112.127 #命令的作用就是让10.163.220.0这个段的ip地址，可以通过115.29.112.127这个公网地址上网。你需要将10.163.220.0/24替换成你在pptp.conf中设置的ip段和子网掩码，将115.29.112.127替换成你服务器自己的公网ip地址，否则拨上来的用户是没有办法上网的。
 ```
 
 
