@@ -277,6 +277,12 @@ Date:   Fri Sep 30 15:17:42 2016 +0800
     Add hello-world.php
 ```
 
+只显示一行
+
+```git
+git log --pretty=oneline
+```
+
 - 进行push
 
 push会更新github上的仓库。
@@ -372,6 +378,18 @@ Total 4 (delta 0), reused 0 (delta 0)
 To github.com:Ekimin/AlgoliaSearch.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
+```
+
+```git
+$ git push -u origin master
+Counting objects: 209, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (200/200), done.
+Writing objects: 100% (209/209), 188.50 KiB | 0 bytes/s, done.
+Total 209 (delta 24), reused 0 (delta 0)
+remote: Resolving deltas: 100% (24/24), done.
+To github.com:Ekimin/WTT.git
+ * [new branch]      master -> master
 ```
 
 ## 场景：在本地新建分支 dev，push到远程仓库（远程没有dev分支）
@@ -481,6 +499,30 @@ origin  git@github.com:Ekimin/AlgoliaSearch.git (push)
 git log
 git log -p -2   #-p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：
 git log --pretty=oneline  #单行显示
+```
+
+## 忽略已经被添加到tracked file 里的文件
+
+```git
+git rm --cached [文件名] 
+git rm -r --cached [目录]
+```
+
+## 回退版本
+
+```git
+git reset --hard HEAD^ 上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+```
+
+## 查看版本完整命令记录
+
+```git
+$ git reflog
+5710eb9 HEAD@{0}: commit: modified post vpn-server-centos6
+1e5efe6 HEAD@{1}: commit: new post sublime
+b46785b HEAD@{2}: commit: new post sublime
+1b853e8 HEAD@{3}: commit: new post mysqlerror
+daaf6bd HEAD@{4}: commit: new post: encoding
 ```
 
 ----
