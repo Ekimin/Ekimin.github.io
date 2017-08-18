@@ -379,6 +379,11 @@ under the License.
      | this mirror serves has an ID that matches the mirrorOf element of this mirror. IDs are used
      | for inheritance and direct lookup purposes, and must be unique across the set of mirrors.
      |
+     镜像指定：
+     id: 镜像的唯一标示，各个镜像不一样就行
+     mirrorOf: 指定替代的仓库id，比如central代表替代仓库id为central的远程仓库
+     name：好记的名字
+     url：替代后的仓库地址
      -->
     <mirror>
       <id>mirrorId</id>
