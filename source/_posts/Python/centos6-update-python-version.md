@@ -1,13 +1,14 @@
 ---
 title: centos6更新Python
-date: 
-tags: [Python]
+tags:
+  - Python
 categories: Python
-layout: post
-updated: 
-comments: 
-permalink: 
+date: 2017-08-24 09:23:42
+updated:
+comments:
+permalink:
 ---
+
 
 CentOs 6 自带的python版本是2.6的，本文记录了升级到2.7以及pip安装和处理yum依赖的方法。
 
@@ -48,7 +49,8 @@ mkdir /usr/local/python2.7
 ```
 cd Python-2.7.10 #进入解压后的Python目录
 ./configure --prefix=/usr/local/python2.7  #等待编译完成
-make && make install #等待安装
+make
+make install #等待安装
 ```
 
 - 修改原来的python2.6
