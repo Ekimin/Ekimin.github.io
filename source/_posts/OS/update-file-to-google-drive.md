@@ -1,13 +1,16 @@
 ---
 title: 用 gdrive 上传文件到 google 云盘
-date: 
-tags: [Gdrive, Linux, Google]
+tags:
+  - Gdrive
+  - Linux
+  - Google
 categories: OS
-layout: post
-updated: 
-comments: 
-permalink: 
+date: 2017-08-25 10:28:49
+updated:
+comments:
+permalink:
 ---
+
 
 gdrive可以在linux命令行中操作Google Drive！
 
