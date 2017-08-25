@@ -32,7 +32,7 @@ wget http://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
 
 ## 2、解压
 
-```aidl
+```
 tar -xvf Python-2.7.10.tar
 ```
 
