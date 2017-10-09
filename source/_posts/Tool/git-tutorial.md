@@ -392,7 +392,7 @@ To github.com:Ekimin/WTT.git
  * [new branch]      master -> master
 ```
 
-## 场景：在本地新建分支 dev，push到远程仓库（远程没有dev分支）
+## 在本地新建分支 dev，push到远程仓库（远程没有dev分支）
 
 ```git
 E:\IDEA\AlgoliaSearch>git branch
