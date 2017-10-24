@@ -1,7 +1,6 @@
 ---
-{}
 date: 2017-10-09 14:22:15
-title:
+title: gitlab 安装部署
 tags:
 categories:
 updated:
