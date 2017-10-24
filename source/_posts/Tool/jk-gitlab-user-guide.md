@@ -14,7 +14,7 @@ permalink:
 
 |序号|版本号|修订日期|修订人|修订内容|备注|
 |:--:|:----:|:------:|:----:|:------:|:--:|
-| 1  | V1.0 | 2017-10-23 | 何益民 |  ||
+| 1  | V1.0 | 2017-10-23 | 何益民 |  |    |
 
 <!--more-->
 
@@ -53,7 +53,7 @@ git是分布式的版本控制系统, 每一个终端都是一个仓库，客户
 
 ### 上传 sshkey
 
-**Tips: 没有上传sshkey的电脑无法下载和上传代码，但不影响登录，设置等常规操作**
+**Tips: 没有上传sshkey的电脑无法通过 ssh 协议下载和上传代码、commit、push等，但不影响登录，查看以及使用http协议的相关操作**
 
 git仓库之间的代码传输协议主要使用ssh协议。需要使用ssh-keygen上传公钥，使用非对称加密传输。下面讲述如何上传你的ssh公钥。
 
@@ -119,3 +119,95 @@ cat .ssh/id_rsa.pub
 ![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/SSH%20KEYS.png)
 
 ![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/sshkey2.png)
+
+**第三步：验证**
+
+在终端中输入 ssh -T git@<server> 进行测试链接，这里以测试环境192.168.9.75为例。
+输入 ssh -T git@192.168.9.75 后，因为是首次连接，会提示你是否继续连接，输入 yes 回车。
+
+```
+$ ssh -T git@192.168.9.75
+The authenticity of host '192.168.9.75 (192.168.9.75)' can't be established.
+RSA key fingerprint is SHA256:46UPdFB+77wyUqaLfu/kUu13/f/ed7oN4/V95bLkZEk.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.9.75' (RSA) to the list of known hosts.
+Welcome to GitLab, 何益民!
+```
+
+## 项目管理
+
+<span id="newproject"></span>
+
+### 创建项目
+
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/project%E9%A1%B5%E9%9D%A2.png)
+
+点击上方 “+” 或 Projects 页面的 “New project” 创建项目。
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
+
+### 项目设置
+
+进入项目，点击左下角 Settings
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE.png)
+
+#### 添加项目成员
+
+选择Setting 的子菜单 Members，这里以给项目 testproject 添加两个成员 张三和李四 为例：
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E6%B7%BB%E5%8A%A0%E6%88%90%E5%91%98.png)
+
+添加过后，张三和李四就拥有该项目的相应权限了，若要修改，可以在页面下面进行操作：
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E6%B7%BB%E5%8A%A0%E8%BF%87%E5%90%8E2.png)
+
+### 克隆项目
+
+这里假定你已经上传好了
+
+## 组管理
+
+- 组是若干项目的集合
+- 组内的项目都有组路径作为前缀
+- 可以将已经存在的项目移动到某个组内
+
+### 创建组
+
+点击最上方 Group 进入组管理界面，点击 New group 创建一个新的组。（这里以创建一个名叫库里的组为例）
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E7%BB%84%E7%95%8C%E9%9D%A2.png)
+
+### 组内创建项目
+
+在组界面点击 New project 创建项目，创建项目过程同上，参见[创建项目](#newproject)
+
+![](http://oduq3lfcc.bkt.clouddn.com/%E6%96%B0%E5%BB%BA%E7%BB%84%E5%86%85%E9%A1%B9%E7%9B%AE.png)
+
+### 将项目转移到组
+
+这里以将 testproject 转移到组 库里 为例。
+
+1. 进入要转移的项目 testproject；
+2. 点击左下角 Settings；
+3. 点击 Expand 展开 Advance settings 选项卡；
+4. 定位到 Transfer project，选择组 库里，点击 Transfer project进行转移
+5. 为了防止误操作，需要输入要转移的项目名字确认。
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/expand%20advanced%20settings.png)
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E8%BD%AC%E7%A7%BB%E9%A1%B9%E7%9B%AE.png)
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E8%BD%AC%E7%A7%BB%E7%A1%AE%E8%AE%A4.png)
+
+### 组内成员管理
+
+#### 添加成员到组
+
+![](http://oduq3lfcc.bkt.clouddn.com/%E6%B7%BB%E5%8A%A0%E6%88%90%E5%91%98%E5%88%B0%E7%BB%84.png)
+
+#### 成员管理
+
+![](http://oduq3lfcc.bkt.clouddn.com/%E7%AE%A1%E7%90%86%E7%BB%84%E6%88%90%E5%91%98.png)
+
