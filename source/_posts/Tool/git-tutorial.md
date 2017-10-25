@@ -573,5 +573,5 @@ daaf6bd HEAD@{4}: commit: new post: encoding
 
 # 错误汇总
 
-##  git在push的时候出现insufficient permission for adding an object错误
+##  git在push时出现insufficient permission for adding an object错误
 http://blog.csdn.net/yujunf/article/details/7595231
