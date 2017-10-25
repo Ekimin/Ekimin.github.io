@@ -21,7 +21,7 @@ permalink:
 
 ## 简介
 
-金科代码管理中心采用 Git 作为版本控制工具，旨在提供高效、稳定、安全的代码管理，沉淀知识，方便开发者协作等功能。
+金科代码管理中心采用 Git 作为版本控制工具，旨在提供高效、稳定、安全的代码管理，方便开发者协作，统一有效地推进各项开发任务。
 
 **测试地址： http://192.168.9.75**
 **正式地址： http://192.168.9.83**
@@ -45,24 +45,59 @@ git是分布式的版本控制系统, 每一个终端都是一个仓库，客户
 [Git基本操作](http://www.runoob.com/git/git-basic-operations.html)
 [Git和SVN区别](http://blog.jobbole.com/31444/)
 
+<span id="installgit"></sapn>
+
+### 下载安装 Git
+
+Linux 和 Mac 系统自带 Git 工具，打开终端就可以使用相关命令。这里主要讲一下Windows环境的安装。
+
+- 下载地址： [官方下载地址](https://git-scm.com/downloads)  [备用下载地址](http://file.wentuotuo.com/Git-2.14.2.3-64-bit.exe)
+
+下载过后直接运行安装，默认配置就行，安装完成后，你的鼠标右键提示菜单中会多出两项：
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E5%8F%B3%E9%94%AEgit%E8%8F%9C%E5%8D%95.png)
+
+<span id="configgit"></span>
+### 配置 Git
+
+安装好 Git 后，需要一些配置工作，不用担心，你只需要配置一次。右键任意位置打开 Gitbash here
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/git%E5%8F%B3%E9%94%AE.png)
+
+在打开的终端中，配置用户名和邮箱信息：
+
+```
+git config --global user.name "你的代码中心的用户名"
+git config --global user.email "youremail@XXX.com"
+```
+
+这里是告诉 Git 你的用户名和邮箱，之后提交代码时，这些信息会同时上传到服务器作为隐藏提交信息。
+
+**验证配置：**
+
+输入 $ git config --global --list 验证配置的信息是否正确
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/gitconfig.png)
+
 ----
 
 ## 正式开始
 
 了解了 Git 的基本概念和操作后，下面正式进入金科代码管理中心的使用。
 
+<span id="uploadsshkey"></span>
+
 ### 上传 sshkey
 
-**Tips: 没有上传sshkey的电脑无法通过 ssh 协议下载和上传代码、commit、push等，但不影响登录，查看以及使用http协议的相关操作**
+**Tips: 没有上传sshkey的电脑无法通过 ssh 协议下载和上传代码、提交合并代码等操作，但不影响登录、查看以及使用http协议的相关操作。**
 
-git仓库之间的代码传输协议主要使用ssh协议。需要使用ssh-keygen上传公钥，使用非对称加密传输。下面讲述如何上传你的ssh公钥。
+git仓库之间的代码传输协议主要使用ssh协议。SSH是一个专为远程登录会话和其他网络服务提供安全性的协议。默认状态下SSH链接是需要密码认证的，可以通过添加系统认证（即公钥-私钥）的修改，修改后系统间可以实现免密认证。生成ssh公钥需要使用ssh-keygen工具，在金科代码管理中心，代码的上传下载、提交合并等操作都依赖ssh公钥。下面讲述如何上传你的ssh公钥。
 
 linux/mac 系统自带ssh-keygen工具，直接在终端中操作即可。
-Windows 用户需要先下载安装 Git工具，下载地址： [官方下载地址](https://git-scm.com/downloads)  [备用下载地址](http://file.wentuotuo.com/Git-2.14.2.3-64-bit.exe)
+Windows 用户需要先下载安装 Git工具，参见 [安装Git](#installgit)
 
 **第一步：生成公钥：**
-Windows用户安装好Git工具后，右键任意位置选择 gitbash here 打开终端。Mac、Linux直接打开终端：
-![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/git%E5%8F%B3%E9%94%AE.png)
+Windows用户安装好Git工具后，右键任意位置选择 gitbash here 打开终端。Mac、Linux直接打开系统自带的终端：
 
 ```
 ssh-keygen -t rsa -C "your comment here"
@@ -93,7 +128,7 @@ The key's randomart image is:
 |        S     o  |
 |       .       o |
 |        o +   ..o|
-|         O +  o =|
+|         O + .o =|
 |        o.= .o .o|
 +-----------------+
 ```
@@ -101,8 +136,13 @@ The key's randomart image is:
 生成的公钥存储在： {个人主目录}/.ssh/id_rsa.pub 文件中。
 - Windows用户：C:\Users\{你的用户名}\.ssh\id_rsa.pub
 - Linux & Mac：/home/{你的用户名}/.ssh/id_rsa.pub
-
+</br>
 可以直接打开文件或用下面命令查看公钥：（由于.ssh文件夹是隐藏文件夹，所以需要在控制面板-文件夹选项中打开隐藏文件显示才能看见。所以这里推荐直接干命令）
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+或
 ```
 cd
 cat .ssh/id_rsa.pub
@@ -122,8 +162,12 @@ cat .ssh/id_rsa.pub
 
 **第三步：验证**
 
-在终端中输入 ssh -T git@<server> 进行测试链接，这里以测试环境192.168.9.75为例。
+添加好ssh key过后在终端中输入 ssh -T git@<server> 进行测试链接，这里以测试环境192.168.9.75为例。
 输入 ssh -T git@192.168.9.75 后，因为是首次连接，会提示你是否继续连接，输入 yes 回车。
+
+当你输入yes过后，如果提示你输入 "git@192.168.9.75's passwords:", 则说明上传的ssh keys无效，请检查key并重新生成上传。
+
+如果出现下面欢迎提示，则说明添加成功：
 
 ```
 $ ssh -T git@192.168.9.75
@@ -147,6 +191,21 @@ Welcome to GitLab, 何益民!
 
 ![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
 
+### 删除项目
+
+非管理员只能删除自己创建的项目，操作步骤：
+
+1. 进入要删除的项目。
+2. 点击左下角Setting
+3. 点击 Advanced settings 右边的 Expand 展开更多选项
+4. 点击下方 Remove project
+5. 为了防止误操作，你必须输入项目名字确认删除。
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/expand%20advanced%20settings.png)
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E5%88%A0%E9%99%A4%E9%A1%B9%E7%9B%AE.png)
+
+
 ### 项目设置
 
 进入项目，点击左下角 Settings
@@ -165,7 +224,60 @@ Welcome to GitLab, 何益民!
 
 ### 克隆项目
 
-这里假定你已经上传好了
+假定你已经上传好了 sshkey，如果没有，请参考[上传sshkey](#uploadsshkey)
+
+这里以项目 testproject 为例：
+
+- 复制项目 ssh 地址：git@192.168.9.75:curry/testproject.git
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE1.png)
+
+- 打开终端，输入命令 git clone git@192.168.9.75:curry/testproject.git
+
+该命令会将 testproject 项目从服务器克隆到当前文件夹
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE2.png)
+
+### 上传项目
+
+上面克隆clone 下来的项目 testproject 是一个新建的空项目（Blank project），里面只有一个隐藏的 .git 文件夹，里面包含git版本控制的所有信息。
+
+![](http://oduq3lfcc.bkt.clouddn.com/tp%E7%9B%AE%E5%BD%95.png)
+
+这里新建一个名叫 HelloJinke.txt 的文件。
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/hellowjinke.png)
+
+在当前项目目录右键 gitbash here 打开终端，或者cd到该目录，输入git status 查看仓库状态。
+
+![](http://oduq3lfcc.bkt.clouddn.com/gitstatus.png)
+
+可以看到刚刚新建的 HelloJinke.txt 还没有被加入版本控制。输入 git add HelloJinke.txt 将其加入版本控制库，然后再 git status 查看状态：
+
+![](http://oduq3lfcc.bkt.clouddn.com/status1.png)
+
+这里 Git 已经将新文件加入到版本控制中了，下面输入 git commit -m "新建文件HelloJinke.txt" 提交改变到本地版本库。
+
+![](http://oduq3lfcc.bkt.clouddn.com/commit.png)
+
+这样我们刚刚新建的文件就提交到了本地版本库中了，为什么说是本地版本库呢？因为 Git 是分布式的版本管理工具，你本地和金科代码中心的Git仓库本质上没有什么区别，只是为了大家写作，我们“推选”金科代码管理中心的Git仓库作为逻辑上的服务器，大家都把代码 push 到那里，方便管理。
+
+那么如何把刚刚新建的文件推送（push）到远程仓库（金科代码管理中心的Git库）呢？这里就要用到 git push 命令了。
+
+试试 git push :
+
+```
+$ git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To 192.168.9.75:heym/testproject.git
+ * [new branch]      master -> master
+```
+
+这样代码就上传到了远程仓库，在testproject项目页面，可以看到刚刚新建的文件
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/1push.png)
 
 ## 组管理
 
@@ -211,3 +323,19 @@ Welcome to GitLab, 何益民!
 
 ![](http://oduq3lfcc.bkt.clouddn.com/%E7%AE%A1%E7%90%86%E7%BB%84%E6%88%90%E5%91%98.png)
 
+
+## 错误汇总
+
+常见错误汇总，使用 CTRL+F 搜索
+
+### 项目界面出现 “You won't be able to pull or push project code via SSH until you add an SSH key to your profile”
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/error%E6%8F%90%E7%A4%BA%E4%B8%8A%E4%BC%A0key.png)
+
+**解决方法：** 上传你电脑的SSH KEYS到代码管理中心，参见[上传sshkey](#uploadsshkey)
+
+### 克隆git clone或上传git push 等操作出现类似 “git@192.168.9.75's password:” 输入密码的提示
+
+![](http://oduq3lfcc.bkt.clouddn.com/image/jinke/gitlab/error%E6%8F%90%E7%A4%BA%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81.png)
+
+**解决方法：** 上传你电脑的SSH KEYS到代码管理中心，参见[上传sshkey](#uploadsshkey)
