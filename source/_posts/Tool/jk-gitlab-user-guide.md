@@ -134,7 +134,7 @@ The key's randomart image is:
 ```
 
 生成的公钥存储在： {个人主目录}/.ssh/id_rsa.pub 文件中。
-- Windows用户：C:\Users\{你的用户名}\.ssh\id_rsa.pub
+- Windows用户：C:\Users\\{你的用户名}\\.ssh\id_rsa.pub
 - Linux & Mac：/home/{你的用户名}/.ssh/id_rsa.pub
 </br>
 可以直接打开文件或用下面命令查看公钥：（由于.ssh文件夹是隐藏文件夹，所以需要在控制面板-文件夹选项中打开隐藏文件显示才能看见。所以这里推荐直接干命令）
